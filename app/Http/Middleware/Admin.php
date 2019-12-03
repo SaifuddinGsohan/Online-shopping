@@ -27,7 +27,7 @@ class Admin
         }
         elseif ($user->admin('com')) {
 
-            return redirect('/produck');
+            return redirect('/product');
             
         }
 

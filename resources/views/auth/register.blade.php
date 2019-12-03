@@ -1,11 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
+
+@include('inc.header')
+
+<div class="breadcrumb-area pt-205 pb-10">
+    <div class="container">
+        <div class="text-center">
+            <h1>REGISTER</h1>                  
+        </div>
+    </div>
+</div>
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -61,17 +73,41 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
+                        <!-- /user roll/ -->
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
+
+                            <div class="col-md-6">
+                                <select>
+                                    <option name="role_id" value="3">User</option>  
+                                    <!-- <option value="1">Administorer</option> -->
+                                    <option name="role_id" value="2">Company</option>         
+                                </select>                                       
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="order-button-payment">
+                                    <button type="submit" class="btn btn-primary">
+                                        {{ __('Register') }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="breadcrumb-area pt-205 pb-500">
+    SD
+</div>
+
+@include('inc.footer')
+
 @endsection

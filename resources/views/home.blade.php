@@ -2,7 +2,9 @@
 
 @section('content')
 <div class="container">
-    add
+    <a href="{{route('order.index')}}">
+                                <h6> Order list </h6>
+                            </a>
     <div class="row justify-content-center">
         
         <div class="col-md-8">
@@ -20,12 +22,11 @@
                                 <h3> {{$item->name}} </h3>
                             </a>
 
-                            <form method="POST" action="/order">
+                            <form method="POST" action="{{ url('/order') }}">
 
                                 {{csrf_field()}}
                                 <input type="hidden" name="produck_id" value="{{$item->id}}">
-                                <input type="text" name="number of item" value="1">
-                                <input type="submit" name="Add">
+                                <input type="submit" name="Add" value="submit">
 
                             </form>
 
@@ -58,5 +59,6 @@
 
 
     </div>
+    
 </div>
 @endsection

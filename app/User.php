@@ -42,9 +42,9 @@ class User extends Authenticatable
 
 
 
-    public function producks(){
+    public function products(){
 
-        return $this->hasMany('App\Produck');
+        return $this->hasMany('App\Product');
 
 
     }

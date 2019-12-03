@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Order;
-use App\Produck;
+use App\Product;
 
 
 class OrderC extends Controller
@@ -19,12 +19,13 @@ class OrderC extends Controller
     public function index()
     {
         //
+
         $uid= Auth::user()->id;
         $lists=[];
         
 
-        $orders = Order::all()->where('user_id',$uid);
-        $producks = Produck::all();
+        $orders = Order::where('user_id', $uid)->get();
+        $products = Product::all();
 
         //return $list[]= $producks->;
         //return $orders;
@@ -32,11 +33,11 @@ class OrderC extends Controller
 
         foreach($orders as $order){
             
-            foreach($producks as $produck){
+            foreach($products as $product){
 
-                if($produck->id == $order->produck_id){
+                if($product->id == $order->product_id){
 
-                   $lists[]= $produck;
+                   $lists[]= $product;
                 }
             }
         }
@@ -75,7 +76,7 @@ class OrderC extends Controller
     public function store(Request $request)
     {
         //
-        return $request;
+        // return $request;
         //return add;
         //$user = Auth::user();
 
@@ -131,14 +132,15 @@ class OrderC extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    //public function update(Request $request, $id)
-    //{
+    public function update(Request $request, $id)
+    {
+        
         //
        // Produck::findOrFail($id)->update($request->all());
 
       //  return redirect('/produck');
 
-    //}
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -149,14 +151,12 @@ class OrderC extends Controller
     public function destroy($id)
     {
         //
+
         $uid = Auth::user()->id;
 
-        $oid =	Order::where([['user_id',$uid],['produck_id',$id]])->get(); 
-        //$oid = Order::where('produck_id',$id); 
+        Order::where([['user_id',$uid],['product_id',$id]])->delete();
 
-        Order::whereId($oid)->delete();
-
-        return view('order.index',compact('uid'));
+        return redirect('/order');
 
     }
 

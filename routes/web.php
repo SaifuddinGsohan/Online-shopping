@@ -2,7 +2,7 @@
 
 
 use Illuminate\Support\Facades\Auth;
-use App\Produck;
+use App\Product;
 
 
 Route::get('/user','AdminC@index');
@@ -10,13 +10,13 @@ Route::get('/user','AdminC@index');
 
 Route::resource('/order','OrderC');
 
-Route::resource('/produck','ProduckC');
+Route::resource('/product','ProductC');
 
 
 
 
 Route::get('/show', function () {
-    return view('produck.show');
+    return view('product.show');
 });
 
 
@@ -32,7 +32,7 @@ Route::get('/ss', function () {
 
    // $items = Produck::all();
 
-    return view('layouts.index');
+    return view('product.make');
 
 });
 
@@ -51,7 +51,7 @@ Route::get('/abc', function () {
 
     //$user = Auth::user();
 
-    $items = Produck::all();
+    $items = Product::all();
 
     return view('home',compact('order'));
 
@@ -61,7 +61,7 @@ Route::get('/abc', function () {
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('index');
 
 
 

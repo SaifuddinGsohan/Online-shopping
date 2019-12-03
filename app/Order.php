@@ -8,13 +8,13 @@ class Order extends Model
 {
     //
 
-    protected $fillable = ['user_id','produck_id',];
+    protected $fillable = ['user_id','product_id',];
 
 
 
-    public function produck(){
+    public function product(){
 
-        return $this->hasMany('App\Produck');
+        return $this->hasMany('App\Product');
 
 
     }
@@ -23,7 +23,7 @@ class Order extends Model
     public function UserOrder(){
 
               
-        return $this->produck;
+        return $this->product;
 
 
     }

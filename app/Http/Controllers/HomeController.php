@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Produck;
+use App\Product;
 
 class HomeController extends Controller
 {
@@ -26,9 +26,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        $items = Produck::all();
+        $items = Product::all();
 
-        return view('home',compact('items'));
+        return view('index',compact('items'));
 
         //return view('home');
     }
