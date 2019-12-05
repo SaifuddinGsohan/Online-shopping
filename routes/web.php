@@ -12,11 +12,27 @@ Route::resource('/order','OrderC');
 
 Route::resource('/product','ProductC');
 
-
+Route::get('/like','OrderC@like');
 
 
 Route::get('/show', function () {
     return view('product.show');
+});
+
+Route::get('/contact', function () {
+
+    //$user = Auth::user();
+
+    return view('contact');
+
+});
+
+Route::get('/about', function () {
+
+    //$user = Auth::user();
+
+    return view('about');
+
 });
 
 
@@ -32,7 +48,7 @@ Route::get('/ss', function () {
 
    // $items = Produck::all();
 
-    return view('product.make');
+    return view('product.details');
 
 });
 

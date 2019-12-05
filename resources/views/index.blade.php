@@ -19,32 +19,17 @@
                         <ul>
                             <li><a href="#">Home</a>
                                 <ul class="single-dropdown">
-                                    <li><a href="index.html">Fashion</a></li>
-                                    <li><a href="index-fashion-2.html">Fashion style 2</a></li>
-                                    <li><a href="index-fruits.html">fruits</a></li>
-                                    <li><a href="index-book.html">book</a></li>
-                                    <li><a href="index-electronics.html">electronics</a></li>
-                                    <li><a href="index-electronics-2.html">electronics style 2</a></li>
-                                    <li><a href="index-food.html">food & drink</a></li>
-                                    <li><a href="index-furniture.html">furniture</a></li>
-                                    <li><a href="index-handicraft.html">handicraft</a></li>
-                                    <li><a target="_blank" href="index-smart-watch.html">smart watch</a></li>
-                                    <li><a href="index-sports.html">sports</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Pages</a>
-                                <ul class="single-dropdown">
-                                    <li><a href="about-us.html">about us</a></li>
-                                    <li><a href="menu-list.html">menu list</a></li>
+                                    <li><a href="{{ url('/about') }}">about us</a></li>
                                     <li><a href="{{ url('/login') }}">login</a></li>
                                     <li><a href="{{ route('register') }}">register</a></li>
-                                    <li><a href="cart.html">cart page</a></li>
-                                    <li><a href="checkout.html">checkout</a></li>
-                                    <li><a href="wishlist.html">wishlist</a></li>
-                                    <li><a href="contact.html">contact</a></li>
+                                    <li><a href="{{ url('/order') }}">cart page</a></li>
+                                    <li><a href="">checkout</a></li>
+                                    <li><a href="{{ url('/like') }}">wishlist</a></li>
+                                    <li><a href="{{ url('/contact') }}">contact</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Latest <span>New</span></a>
+
+                            <!-- <li><a href="#">Latest <span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width">
                                     <div class="mega-dropdown-style mega-common4 mb-40">
                                         <h4 class="mega-subtitle"> Clothing</h4>
@@ -94,8 +79,124 @@
                                         <a href="single-product.html"><img src="assets/img/bg/3.png" alt=""></a>
                                     </div>
                                 </div>
+                            </li> -->
+
+                            <li><a href="#">Electronic Devices<span>New</span></a>
+                                <div class="mega-menu-dropdown mega-dropdown-width-2">
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <ul>
+                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
+                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
+                                            <li><a href="shop.html">grid 4 column</a></li>
+                                            <li><a href="shop-grid-box.html">grid box style</a></li>
+                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
+                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
+                                            <li><a href="shop-list-box.html">list box style</a></li>
+                                            <li><a href="cart.html">shopping cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="#">Shop</a>
+
+                            <li><a href="#">Women's Fashion<span>New</span></a>
+                                <div class="mega-menu-dropdown mega-dropdown-width-2">
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Bottoms</h4>
+                                        <ul>
+                                            <li><a href=""> grid 2 column</a></li>
+                                            <li><a href=""> grid 3 column</a></li>
+                                            <li><a href="">grid 4 column</a></li>
+                                            <li><a href="">grid box style</a></li>
+                                            <li><a href=""> list 1 column</a></li>
+                                            <li><a href="">list 2 column</a></li>
+                                            <li><a href="">list box style</a></li>
+                                            <li><a href="">shopping cart</a></li>
+                                            <li><a href="">wishlist</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Tops & Sets</h4>
+                                        <ul>
+                                            <li><a href=""> grid 2 column</a></li>
+                                            <li><a href=""> grid 3 column</a></li>
+                                            <li><a href="">grid 4 column</a></li>
+                                            <li><a href="">grid box style</a></li>
+                                            <li><a href=""> list 1 column</a></li>
+                                            <li><a href="">list 2 column</a></li>
+                                            <li><a href="">list box style</a></li>
+                                            <li><a href="">shopping cart</a></li>
+                                            <li><a href="">wishlist</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Weddings & Events</h4>
+                                        <ul>
+                                            <li><a href="product-de">tab style 1</a></li>
+                                            <li><a href="product-deta">tab style 2</a></li>
+                                            <li><a href="product-deta"> tab style 3</a></li>
+                                            <li><a href="product-deta">sticky style</a></li>
+                                            <li><a href="product-deta">sticky style 2</a></li>
+                                            <li><a href="product-deta">gallery style</a></li>
+                                            <li><a href="product-deta">gallery style 2</a></li>
+                                            <li><a href="product-deta">fixed image style</a></li>
+                                            <li><a href="product-deta">fixed image style 2</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </li>
+
+                            <li><a href="#">Men's Fashion</a>
+                                <div class="mega-menu-dropdown mega-dropdown-width-2">
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Hot Sale</h4>
+                                        <ul>
+                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
+                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
+                                            <li><a href="shop.html">grid 4 column</a></li>
+                                            <li><a href="shop-grid-box.html">grid box style</a></li>
+                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
+                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
+                                            <li><a href="shop-list-box.html">list box style</a></li>
+                                            <li><a href="cart.html">shopping cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Bottoms</h4>
+                                        <ul>
+                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
+                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
+                                            <li><a href="shop.html">grid 4 column</a></li>
+                                            <li><a href="shop-grid-box.html">grid box style</a></li>
+                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
+                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
+                                            <li><a href="shop-list-box.html">list box style</a></li>
+                                            <li><a href="cart.html">shopping cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="mega-subtitle">Accessories</h4>
+                                        <ul>
+                                            <li><a href="product-details.html">tab style 1</a></li>
+                                            <li><a href="product-details-2.html">tab style 2</a></li>
+                                            <li><a href="product-details-3.html"> tab style 3</a></li>
+                                            <li><a href="product-details-4.html">sticky style</a></li>
+                                            <li><a href="product-details-5.html">sticky style 2</a></li>
+                                            <li><a href="product-details-6.html">gallery style</a></li>
+                                            <li><a href="product-details-7.html">gallery style 2</a></li>
+                                            <li><a href="product-details-8.html">fixed image style</a></li>
+                                            <li><a href="product-details-9.html">fixed image style 2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Sports & Outdoor</a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <h4 class="mega-subtitle"> shop layout</h4>
@@ -111,28 +212,30 @@
                                             <li><a href="wishlist.html">wishlist</a></li>
                                         </ul>
                                     </div>
+                                </div>
+                            </li>
+
+                            <li><a href="#">Babies & Toys</a>
+                                <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
-                                        <h4 class="mega-subtitle">product details</h4>
                                         <ul>
-                                            <li><a href="product-details.html">tab style 1</a></li>
-                                            <li><a href="product-details-2.html">tab style 2</a></li>
-                                            <li><a href="product-details-3.html"> tab style 3</a></li>
-                                            <li><a href="product-details-4.html">sticky style</a></li>
-                                            <li><a href="product-details-5.html">sticky style 2</a></li>
-                                            <li><a href="product-details-6.html">gallery style</a></li>
-                                            <li><a href="product-details-7.html">gallery style 2</a></li>
-                                            <li><a href="product-details-8.html">fixed image style</a></li>
-                                            <li><a href="product-details-9.html">fixed image style 2</a></li>
+                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
+                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
+                                            <li><a href="shop.html">grid 4 column</a></li>
+                                            <li><a href="shop-grid-box.html">grid box style</a></li>
+                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
+                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
+                                            <li><a href="shop-list-box.html">list box style</a></li>
+                                            <li><a href="cart.html">shopping cart</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="#">Kids</a>
 
-                            </li>
-                            <li><a href="#">Discount</a></li>
-                            <li><a href="#">Health <span>New</span></a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="{{ url('/contact') }}">contact</a></li>
+                            <li><a href="{{ url('/about') }}">about us</a></li>
+
                         </ul>
                     </nav>
                 </div>
@@ -153,6 +256,9 @@
                             <img src="assets/img/logo/logo.png" alt="">
                         </a>
                     </div>
+
+                    <!-- /search/ -->
+
                     <div class="header-search">
                         <form action="#">
                             <input placeholder="Search What you want" type="text">
@@ -161,8 +267,10 @@
                             </button>
                         </form>
                     </div>
+
+                    <!-- // -->
+
                     <div class="header-login">
-                        <!-- // -->
                         <ul>
                             <!-- Authentication Links -->
                             @guest
@@ -195,12 +303,20 @@
                             @endguest
                         </ul>
                     </div>
+
+                    <!-- order -->
+
                     <div class="header-cart cart-res">
-                        <a class="icon-cart" href="#">
+
+                        <a class="icon-cart" href="url('/order')">
                             <i class="ti-shopping-cart"></i>
+
                             <span class="shop-count pink">02</span>
+
                         </a>
+
                         <ul class="cart-dropdown">
+
                             <li class="single-product-cart">
                                 <div class="cart-img">
                                     <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
@@ -214,46 +330,26 @@
                                     <a href="#"><i class="ti-trash"></i></a>
                                 </div>
                             </li>
-                            <li class="single-product-cart">
-                                <div class="cart-img">
-                                    <a href="#"><img src="assets/img/cart/2.jpg" alt=""></a>
-                                </div>
-                                <div class="cart-title">
-                                    <h5><a href="#"> Bits Headphone</a></h5>
-                                    <h6><a href="#">Black</a></h6>
-                                    <span>$80.00 x 1</span>
-                                </div>
-                                <div class="cart-delete">
-                                    <a href="#"><i class="ti-trash"></i></a>
-                                </div>
-                            </li>
-                            <li class="single-product-cart">
-                                <div class="cart-img">
-                                    <a href="#"><img src="assets/img/cart/3.jpg" alt=""></a>
-                                </div>
-                                <div class="cart-title">
-                                    <h5><a href="#"> Bits Headphone</a></h5>
-                                    <h6><a href="#">Black</a></h6>
-                                    <span>$80.00 x 1</span>
-                                </div>
-                                <div class="cart-delete">
-                                    <a href="#"><i class="ti-trash"></i></a>
-                                </div>
-                            </li>
+
+                            
                             <li class="cart-space">
                                 <div class="cart-sub">
-                                    <h4>Subtotal</h4>
+                                    <h4>Total</h4>
                                 </div>
                                 <div class="cart-price">
                                     <h4>$240.00</h4>
                                 </div>
                             </li>
+
                             <li class="cart-btn-wrapper">
                                 <a class="cart-btn btn-hover" href="#">view cart</a>
                                 <a class="cart-btn btn-hover" href="#">checkout</a>
                             </li>
+
                         </ul>
                     </div>
+
+
                 </div>
                 <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
                     <div class="mobile-menu">

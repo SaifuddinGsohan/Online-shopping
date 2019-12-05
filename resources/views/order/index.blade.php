@@ -74,7 +74,7 @@
                                         <!-- <div class="coupon">
 
                                             <input id="coupon_code" class="input-text" name="coupon_code" value="" placeholder="Coupon code" type="text">
-<input class="button" name="apply_coupon" value="Apply coupon" type="submit">
+                                            <input class="button" name="apply_coupon" value="Apply coupon" type="submit">
 
                                         </div> -->
                                         <div class="coupon2">

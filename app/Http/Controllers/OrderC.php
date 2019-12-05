@@ -160,4 +160,16 @@ class OrderC extends Controller
 
     }
 
+    // like
+
+     public function like()
+    {
+        
+        //$id = Auth::user()->id;
+        //$produck = Produck::findOrFail($id);
+
+        return view('like.edit',compact('produck'));
+
+    }
+
 }

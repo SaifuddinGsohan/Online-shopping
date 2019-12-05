@@ -17,10 +17,11 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->string('name');
-            $table->text('data');
+            $table->text('details');
+            $table->text('description');
             //$table->integer('pcode')->unique();
             //$table->integer('photo');
-            //$table->integer('prich');
+            $table->string('price');
             //$table->integer('taggables_id');
 
             $table->timestamps();
