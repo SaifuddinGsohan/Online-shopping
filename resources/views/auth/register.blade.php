@@ -80,7 +80,7 @@
 
                             <div class="col-md-6">
                                 <select>
-                                    <option name="role_id" value="3">User</option>  
+                                    <option name="role_id" value="3">User </option>  
                                     <!-- <option value="1">Administorer</option> -->
                                     <option name="role_id" value="2">Company</option>         
                                 </select>                                       

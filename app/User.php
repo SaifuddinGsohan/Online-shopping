@@ -64,6 +64,14 @@ class User extends Authenticatable
 
     }
 
+    public function Like(){
+
+              
+        return $this->hasMany('App\Like');
+
+
+    }
+
 
     public function admin($role){
 

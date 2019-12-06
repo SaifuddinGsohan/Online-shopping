@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\Like;
 use App\Order;
 use App\Product;
 
@@ -76,11 +77,11 @@ class OrderC extends Controller
     public function store(Request $request)
     {
         //
-        // return $request;
+         return $request;
         //return add;
-        //$user = Auth::user();
+        $user = Auth::user();
 
-
+        //$item = [];
         //$item['produck_id'] = $request->produck_id;
         //$item['user_id'] = $user->id;
 
@@ -89,7 +90,7 @@ class OrderC extends Controller
         //$pid = $request->produck_id;
         //$producks = Produck::findOrFail($pid);
 
-        //return view('order.box',compact('producks'));
+        //return view('index');
 
     }
 
@@ -165,11 +166,35 @@ class OrderC extends Controller
      public function like()
     {
         
-        //$id = Auth::user()->id;
+        $uid = Auth::user()->id;
+        $producks=Like::all()->where('user_id',$id);
+
         //$produck = Produck::findOrFail($id);
 
-        return view('like.edit',compact('produck'));
+        return view('order.like',compact('producks'));
 
     }
+
+    public function storelike(Request $request)
+    {
+        
+        return $request;
+        //return add;
+        $user = Auth::user();
+
+        $item = [];
+        $item['produck_id'] = $request->produck_id;
+        $item['user_id'] = $user->id;
+
+        like::create($item);
+  
+        //$pid = $request->produck_id;
+        //$producks = Produck::findOrFail($pid);
+
+        //return view('index');
+
+    }
+
+
 
 }

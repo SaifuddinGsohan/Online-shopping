@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="quick-view-list nav" role="tablist">
+                        <!-- <div class="quick-view-list nav" role="tablist">
                             <a class="active" href="#modal1" data-toggle="tab" role="tab" aria-selected="true" aria-controls="home1">
                                 <img src="assets/img/quick-view/s1.jpg" alt="">
                             </a>
@@ -30,7 +30,7 @@
                             <a href="#modal3" data-toggle="tab" role="tab" aria-selected="false" aria-controls="home3">
                                 <img src="assets/img/quick-view/s3.jpg" alt="">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="qwick-view-right">
                         <div class="qwick-view-content">
@@ -39,7 +39,7 @@
                                 <span class="new">$90.00</span>
                                 <span class="old">$120.00  </span>
                             </div>
-                            <div class="rating-number">
+                            <!-- <div class="rating-number">
                                 <div class="quick-view-rating">
                                     <i class="pe-7s-star"></i>
                                     <i class="pe-7s-star"></i>
@@ -50,10 +50,10 @@
                                 <div class="quick-view-number">
                                     <span>2 Ratting (S)</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do tempor incididun ut labore et dolore magna aliqua. Ut enim ad mi , quis nostrud veniam exercitation .</p>
                             <div class="quick-view-select">
-                                <div class="select-option-part">
+                                <!-- <div class="select-option-part">
                                     <label>Size*</label>
                                     <select class="select">
                                         <option value="">- Please Select -</option>
@@ -69,14 +69,14 @@
                                         <option value="">pink</option>
                                         <option value="">yellow</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="quickview-plus-minus">
-                                <div class="cart-plus-minus">
+                                <!-- <div class="cart-plus-minus">
                                     <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
-                                </div>
+                                </div> -->
                                 <div class="quickview-btn-cart">
-                                    <a class="btn-hover-black" href="#">add to cart</a>
+                                    <a class="btn-hover-black" href="#">Add Order</a>
                                 </div>
                                 <div class="quickview-btn-wishlist">
                                     <a class="btn-hover" href="#"><i class="pe-7s-like"></i></a>

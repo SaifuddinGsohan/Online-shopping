@@ -7,12 +7,15 @@ use App\Product;
 
 Route::get('/user','AdminC@index');
 
+// Route::resource('/like','LikeC');
 
 Route::resource('/order','OrderC');
 
 Route::resource('/product','ProductC');
 
-Route::get('/like','OrderC@like');
+Route::get('/like','OrderC@like')->name('like');
+
+Route::post('/like','OrderC@storelike')->name('storelike');
 
 
 Route::get('/show', function () {
@@ -48,7 +51,7 @@ Route::get('/ss', function () {
 
    // $items = Produck::all();
 
-    return view('product.details');
+    return view('order.like');
 
 });
 

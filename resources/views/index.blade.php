@@ -12,7 +12,7 @@
         <div class="header-area">
             <div class="header-left-sidebar">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                    <a href="/"><img src="assets/img/logo/logo.png" alt=""></a>
                 </div>
                 <div class="main-menu menu-hover">
                     <nav>
@@ -560,10 +560,10 @@
                                                 </a>
                                                 <span>hot</span>
                                                 <div class="product-action">
-                                                    <a class="animate-left" title="Wishlist" href="#">
+                                                    <a method class="animate-left" title="Wishlist" href="{{route('storelike',$item->id)}}">
                                                         <i class="pe-7s-like"></i>
                                                     </a>
-                                                    <a class="animate-top" title="Add To Cart" href="#">
+                                                    <a media="POST" class="animate-top" title="Add To Cart" href="{{route('order.store',$item->id)}}">
                                                         <i class="pe-7s-cart"></i>
                                                     </a>
                                                     <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
