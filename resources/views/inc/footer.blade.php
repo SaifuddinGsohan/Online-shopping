@@ -24,12 +24,13 @@
                             <h3 class="footer-widget-title">Categories</h3>
                             <div class="footer-widget-content">
                                 <ul>
-                                    <li><a href="shop.html">Dress</a></li>
-                                    <li><a href="shop.html">Shoes</a></li>
-                                    <li><a href="shop.html">Shirt</a></li>
-                                    <li><a href="shop.html">Baby Product</a></li>
-                                    <li><a href="shop.html">Mans Product</a></li>
-                                    <li><a href="shop.html">Leather</a></li>
+                                    
+                                    <li><a href="shop.html">Device</a></li>
+                                    <li><a href="shop.html">Women</a></li>
+                                    <li><a href="shop.html">Man</a></li>
+                                    <li><a href="shop.html">kids</a></li>
+                                    <li><a href="shop.html">Sport</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>

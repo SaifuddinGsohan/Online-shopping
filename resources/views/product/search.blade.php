@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
     
-    @include('inc.headscc')
+    @include('inc.headcss')
 
     <body>
         <!--[if lt IE 8]>
@@ -9,7 +9,6 @@
         <![endif]-->
         
         @include('inc.header')
-
 
         <div class="shop-page-wrapper ptb-100">
             <div class="container">
@@ -38,19 +37,29 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="sidebar-widget mb-45">
                                 <h3 class="sidebar-title">Categories</h3>
                                 <div class="sidebar-categories">
+                                    <!-- // -->
                                     <ul>
-                                        <li><a href="#">Accessories <span>4</span></a></li>
+                                        <li><a href="shop.html">Device</a></li>
+                                        <li><a href="shop.html">Women</a></li>
+                                        <li><a href="shop.html">Man</a></li>
+                                        <li><a href="shop.html">kids</a></li>
+                                        <li><a href="shop.html">Sport</a></li>
+
+                                        <!-- <li><a href="#">Accessories <span>4</span></a></li>
                                         <li><a href="#">Book <span>9</span></a></li>
                                         <li><a href="#">Clothing <span>5</span> </a></li>
                                         <li><a href="#">Homelife <span>3</span></a></li>
-                                        <li><a href="#">Kids & Baby <span>4</span></a></li>
+                                        <li><a href="#">Kids & Baby <span>4</span></a></li> -->
                                     </ul>
+
                                 </div>
                             </div>
-                            <div class="sidebar-widget sidebar-overflow mb-45">
+
+                            <!-- <div class="sidebar-widget sidebar-overflow mb-45">
                                 <h3 class="sidebar-title">color</h3>
                                 <div class="product-color">
                                     <ul>
@@ -74,8 +83,9 @@
                                         <li><a href="#">lm</a></li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="sidebar-widget mb-50">
+                            </div> -->
+
+                            <!-- <div class="sidebar-widget mb-50">
                                 <h3 class="sidebar-title">Top rated products</h3>
                                 <div class="sidebar-top-rated-all">
                                     <div class="sidebar-top-rated mb-30">
@@ -159,14 +169,17 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
+
                     <div class="col-lg-9">
                         <div class="shop-product-wrapper">
                             <div class="shop-bar-area">
                                 <div class="shop-bar pb-60">
-                                    <div class="shop-found-selector">
+
+                                    <!-- <div class="shop-found-selector">
                                         <div class="shop-found">
                                             <p><span>23</span> Product Found of <span>50</span></p>
                                         </div>
@@ -179,7 +192,8 @@
                                                 <option value="">In stock</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div>-->
+                                    
                                     <div class="shop-filter-tab">
                                         <div class="shop-tab nav" role=tablist>
                                             <a class="active" href="#grid-sidebar7" data-toggle="tab" role="tab" aria-selected="false">
@@ -190,11 +204,15 @@
                                             </a>
                                         </div>
                                     </div>
+
                                 </div>
-                                
+
+
                                 <div class="shop-product-content tab-content">
                                     <div id="grid-sidebar7" class="tab-pane fade active show">
                                         <div class="row">
+
+                                            @foreach($product ['items'] as $item)
 
                                             <div class="col-lg-4 col-md-6">
                                                 <div class="product-wrapper product-box-style mb-30">
@@ -216,20 +234,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="product-content">
-                                                        <h4><a href="#">Homme Tapered Smart </a></h4>
+                                                        <h4><a href="#">{{$item->name}}</a></h4>
                                                         <span>$115.00</span>
                                                     </div>
                                                 </div>
                                            </div>
                                             
-
+                                           @foreach()
 
                                         </div>
                                     </div>
 
+
                                     <div id="grid-sidebar8" class="tab-pane fade">
                                         <div class="row">
 
+                                            @foreach($product ['items'] as $item)
 
                                             <div class="col-lg-12">
                                                 <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
@@ -246,7 +266,7 @@
                                                     </div>
                                                     <div class="product-content-list">
                                                         <div class="product-list-info">
-                                                            <h4><a href="#">Homme Tapered Smart </a></h4>
+                                                            <h4><a href="#">{{$item->name}}</a></h4>
                                                             <span>$150.00</span>
                                                             <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
                                                         </div>
@@ -263,13 +283,16 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
+                                            @endforeach
 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="pagination-style mt-10 text-center">
                             <ul>
                                 <li><a href="#"><i class="ti-angle-left"></i></a></li>
@@ -280,22 +303,20 @@
                                 <li class="active"><a href="#"><i class="ti-angle-right"></i></a></li>
                             </ul>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-		
+        
         @include('inc.footer')
-
         
         @include('inc.modal')
-
-		
+        
         @include('inc.sidemodal')
+        
+        @include('inc.js')
 
-		
-		@include('inc.js')
-		
-		
     </body>
 </html>

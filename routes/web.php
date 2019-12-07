@@ -17,10 +17,12 @@ Route::get('/like','OrderC@like')->name('like');
 
 Route::post('/like','OrderC@storelike')->name('storelike');
 
+Route::get('/search/{qury}','ProductC@search')->name('search');
 
 Route::get('/show', function () {
     return view('product.show');
 });
+
 
 Route::get('/contact', function () {
 
@@ -51,7 +53,7 @@ Route::get('/ss', function () {
 
    // $items = Produck::all();
 
-    return view('order.like');
+    // return view('product.Search');
 
 });
 

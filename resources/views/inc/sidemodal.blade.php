@@ -58,7 +58,8 @@
                                                 <p>HasTech</p>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        
+                                        <!-- <tr>
                                             <td class="compare-title"><h4>color   </h4></td>
                                             <td class="compare-color compare-common">
                                                 <p>Grey, Light Yellow, Green, Blue, Purple, Black </p>
@@ -69,7 +70,8 @@
                                             <td class="compare-size compare-common">
                                                 <p>XS, S, M, L, XL, XXL </p>
                                             </td>
-                                        </tr>
+                                        </tr> -->
+
                                         <tr>
                                             <td class="compare-title"></td>
                                             <td class="compare-price compare-common">

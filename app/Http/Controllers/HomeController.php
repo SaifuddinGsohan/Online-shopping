@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Product;
-
+use App\Categories;
 class HomeController extends Controller
 {
     /**
@@ -26,10 +26,15 @@ class HomeController extends Controller
     public function index()
     {
 
-        $items = Product::all();
+        $product = [];
 
-        return view('index',compact('items'));
+        $product ['items'] = Product::all();
 
-        //return view('home');
+        $product ['categories'] = Categories::all();
+
+        return view('index',compact('product'));
+        
+               
+               
     }
 }

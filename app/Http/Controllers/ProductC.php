@@ -72,21 +72,25 @@ class ProductC extends Controller
         //
         $user = Auth::user();
         
-        $product = Product::findOrFail($id);
+        $product ['product'] = Product::findOrFail($id);
 
-        if($user->admin('adm')){
+        $pu_id = $product ['product']->user_id;
 
-            return view('product.show',compact('product'));
+        $product ['items'] = Product::where('user_id',$pu_id)->get();
 
-        }
-        elseif ($user->admin('com')) {
+        // if($user->admin('adm')){
 
-            return view('product.show',compact('product'));
+        //     return view('product.show',compact('product'));
+
+        // }
+        // elseif ($user->admin('com')) {
+
+        //     return view('product.show',compact('product'));
             
-        }
+        // }
 
 
-        return view('product.showuser',compact('product'));
+        return view('product.show',compact('product'));
     }
 
     /**
@@ -134,4 +138,24 @@ class ProductC extends Controller
         return redirect('/product');
 
     }
+
+    // Search //
+
+    public function search($qury)
+    {
+        //
+
+        //return $qury;
+
+        $product = [];
+
+
+
+        $product ['items'] = Product::where('name',$qury)->get();
+
+        
+        return view('product.search',compact('product'));
+
+    }
+
 }

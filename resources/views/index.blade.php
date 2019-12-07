@@ -260,7 +260,7 @@
                     <!-- /search/ -->
 
                     <div class="header-search">
-                        <form action="#">
+                        <form action="/search">
                             <input placeholder="Search What you want" type="text">
                             <button>
                                 <i class="ti-search"></i>
@@ -351,7 +351,9 @@
 
 
                 </div>
-                <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+
+
+                <!-- <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
@@ -415,9 +417,12 @@
                             </ul>
                         </nav>
                     </div>
-                </div>
+                </div> -->
+
+
                 <div class="slider-area ">
                     <div class="slider-active owl-carousel">
+
                         <div class="single-slider single-slider-hm1 bg-img height-100vh" style="background-image: url(assets/img/slider/15.jpg)">
                             <div class="slider-content slider-animation slider-content-style-1 slider-animated-1">
                                 <h1 class="animated">Fashion</h1>
@@ -435,6 +440,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="single-slider single-slider-hm1 bg-img height-100vh" style="background-image: url(assets/img/slider/15.jpg)">
                             <div class="slider-content slider-animation slider-content-style-1 slider-animated-2">
                                 <h1 class="animated">Fashion</h1>
@@ -452,6 +458,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -469,6 +476,7 @@
     <div class="banner-area-two">
         <div class="container">
             <div class="row no-gutters">
+
                 <div class="col-lg-6 col-xl-6">
                     <div class="banner-wrapper mrgn-r-4">
                         <a href="#"><img src="assets/img/banner/4.jpg" alt=""></a>
@@ -478,6 +486,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-xl-6">
                     <div class="row no-gutters">
                         <div class="col-lg-12">
@@ -489,6 +498,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-12">
                             <div class="row no-gutters">
                                 <div class="col-lg-6">
@@ -510,8 +520,10 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -537,12 +549,13 @@
                             <h4>man</h4>
                         </a>
                         <a href="#home4" data-toggle="tab" role="tab" aria-selected="false" aria-controls="home4">
-                            <h4>ACCESSORIES</h4>
+                            <h4>Device</h4>
                         </a>
                         <a href="#home5" data-toggle="tab" role="tab" aria-selected="false" aria-controls="home5">
                             <h4>kids</h4>
                         </a>
                     </div>
+
                     <div class="tab-content">
 
 
@@ -550,7 +563,7 @@
                         <div class="tab-pane active show fade" id="home1" role="tabpanel">
                             <div class="custom-row">
 
-                                @foreach($items as $item)
+                                @foreach($product ['items'] as $item)
 
                                     <div class="custom-col-5 custom-col-style mb-65">
                                         <div class="product-wrapper">
@@ -573,7 +586,7 @@
                                             </div>
                                             <div class="product-content">
                                                 <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
-                                                <span>$115.00</span>
+                                                <span>{{$item->name}} Tk</span>
     
                                                 <!-- <form method="POST" action="{{ url('/order') }}">
     
@@ -597,6 +610,7 @@
                         <div class="tab-pane fade" id="home2" role="tabpanel">
                             <div class="custom-row">
 
+                                @foreach($product ['items'] as $item)
 
                                 <div class="custom-col-5 custom-col-style mb-65">
                                     <div class="product-wrapper">
@@ -618,13 +632,13 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="product-details.html">Black Faux Suede</a></h4>
-                                            <span>$115.00</span>
+                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
+                                            <span>{{$item->name}} Tk</span>
                                         </div>
                                     </div>
                                 </div>
                                 
-
+                                @endforeach
 
                             </div>
                         </div>
@@ -633,7 +647,7 @@
                         <div class="tab-pane fade" id="home3" role="tabpanel">
                             <div class="custom-row">
 
-
+                                @foreach($product ['items'] as $item)
                                 <div class="custom-col-5 custom-col-style mb-65">
                                     <div class="product-wrapper">
                                         <div class="product-img">
@@ -654,13 +668,13 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="product-details.html">Black Faux Suede</a></h4>
-                                            <span>$115.00</span>
+                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
+                                            <span>{{$item->name}} Tk</span>
                                         </div>
                                     </div>
                                 </div>
                                 
-
+                                @endforeach
 
                             </div>
                         </div>
@@ -669,7 +683,7 @@
                         <div class="tab-pane fade" id="home4" role="tabpanel">
                             <div class="custom-row">
 
-
+                                @foreach($product ['items'] as $item)
                                 <div class="custom-col-5 custom-col-style mb-65">
                                     <div class="product-wrapper">
                                         <div class="product-img">
@@ -690,13 +704,13 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="product-details.html">Navy Bird Print</a></h4>
-                                            <span>$115.00</span>
+                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
+                                            <span>{{$item->name}} Tk </span>
                                         </div>
                                     </div>
                                 </div>
                                 
-
+                                @endforeach
 
                             </div>
                         </div>
@@ -705,7 +719,7 @@
                         <div class="tab-pane fade" id="home5" role="tabpanel">
                             <div class="custom-row">
 
-
+                                @foreach($product ['items'] as $item)
                                 <div class="custom-col-5 custom-col-style mb-65">
                                     <div class="product-wrapper">
                                         <div class="product-img">
@@ -726,13 +740,13 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="product-details.html">Black Faux Suede</a></h4>
-                                            <span>$115.00</span>
+                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
+                                            <span>{{$item->name}} Tk </span>
                                         </div>
                                     </div>
                                 </div>
                                 
-
+                                @endforeach
 
                             </div>
                         </div>

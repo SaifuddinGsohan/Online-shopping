@@ -22,15 +22,9 @@
                                 <ul>
                                     <li><a href="{{ url('/') }}">home</a></li>
                                     <li><a href="{{ url('/about') }}">about us</a></li>
-                                    
-                
-                                    
+                                     
                                     <li><a href="{{ url('/like') }}">Like</a></li>
                                     <li><a href="{{ url('/contact') }}">contact</a></li> 
-
-                                        
-                                    
-                                    
                                    
                                 </ul>
                             </nav>

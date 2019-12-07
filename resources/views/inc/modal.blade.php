@@ -9,15 +9,18 @@
                     <div class="qwick-view-left">
                         <div class="quick-view-learg-img">
                             <div class="quick-view-tab-content tab-content">
+
                                 <div class="tab-pane active show fade" id="modal1" role="tabpanel">
                                     <img src="assets/img/quick-view/l1.jpg" alt="">
                                 </div>
-                                <div class="tab-pane fade" id="modal2" role="tabpanel">
+
+                                <!-- <div class="tab-pane fade" id="modal2" role="tabpanel">
                                     <img src="assets/img/quick-view/l2.jpg" alt="">
                                 </div>
                                 <div class="tab-pane fade" id="modal3" role="tabpanel">
                                     <img src="assets/img/quick-view/l3.jpg" alt="">
-                                </div>
+                                </div> -->
+                                
                             </div>
                         </div>
                         <!-- <div class="quick-view-list nav" role="tablist">

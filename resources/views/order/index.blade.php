@@ -95,7 +95,7 @@
                                             <!-- <li>Subtotal<span>100.00</span></li> -->
                                             <li>Total Tk<span>100.00</span></li>
                                         </ul>
-                                        <a href="#">Proceed to checkout</a>
+                                        <a href="order/checkout">Proceed to checkout</a>
                                     </div>
                                 </div>
                             </div>

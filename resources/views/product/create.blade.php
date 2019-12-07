@@ -58,6 +58,20 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-md-6">
+                                            <div class="checkout-form-list">
+                                                <label>Categorie<span class="required">*</span></label> 
+
+                                                <select>
+                                                    <option name="categorie_id" value="1">Device</option>  
+                                                    <option name="categorie_id" value="2">Women</option>
+                                                    <option name="categorie_id" value="3">Men</option>
+                                                    <option name="categorie_id" value="4">Sport</option>
+                                                    <option name="categorie_id" value="5">Kids</option>            
+                                                </select>                                       
+                                            </div>
+                                        </div>
+
 
 
 

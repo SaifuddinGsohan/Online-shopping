@@ -32,6 +32,8 @@
                                     </thead>
                                     <tbody>
 
+                                        @foreach($products as $product)
+
                                         <tr>
                                             <td class="product-remove"><a href="#"><i class="pe-7s-close"></i></a></td>
                                             <td class="product-thumbnail">
@@ -42,6 +44,8 @@
                                             
                                             <td class="product-subtotal">$165.00</td>
                                         </tr>
+
+                                        @endforeach
                                         
                                     </tbody>
                                 </table>
