@@ -4,6 +4,9 @@
 
 @include('inc.header')
 
+@include('inc.headcss')
+
+
 <div class="breadcrumb-area pt-205 pb-10">
     <div class="container">
         <div class="text-center">
@@ -105,7 +108,7 @@
 </div>
 
 <div class="breadcrumb-area pt-205 pb-500">
-    SD
+    DIU
 </div>
 
 @include('inc.footer')

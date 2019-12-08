@@ -306,54 +306,13 @@
 
                     <!-- order -->
 
-                    <div class="header-cart cart-res">
-
-                        <a class="icon-cart" href="url('/order')">
-                            <i class="ti-shopping-cart"></i>
-
-                            <span class="shop-count pink">02</span>
-
-                        </a>
-
-                        <ul class="cart-dropdown">
-
-                            <li class="single-product-cart">
-                                <div class="cart-img">
-                                    <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
-                                </div>
-                                <div class="cart-title">
-                                    <h5><a href="#"> Bits Headphone</a></h5>
-                                    <h6><a href="#">Black</a></h6>
-                                    <span>$80.00 x 1</span>
-                                </div>
-                                <div class="cart-delete">
-                                    <a href="#"><i class="ti-trash"></i></a>
-                                </div>
-                            </li>
-
-                            
-                            <li class="cart-space">
-                                <div class="cart-sub">
-                                    <h4>Total</h4>
-                                </div>
-                                <div class="cart-price">
-                                    <h4>$240.00</h4>
-                                </div>
-                            </li>
-
-                            <li class="cart-btn-wrapper">
-                                <a class="cart-btn btn-hover" href="#">view cart</a>
-                                <a class="cart-btn btn-hover" href="#">checkout</a>
-                            </li>
-
-                        </ul>
-                    </div>
+                    @include('inc.order')
 
 
                 </div>
 
 
-                <!-- <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
@@ -417,7 +376,7 @@
                             </ul>
                         </nav>
                     </div>
-                </div> -->
+                </div>
 
 
                 <div class="slider-area ">
@@ -461,6 +420,7 @@
                         
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -479,10 +439,10 @@
 
                 <div class="col-lg-6 col-xl-6">
                     <div class="banner-wrapper mrgn-r-4">
-                        <a href="#"><img src="assets/img/banner/4.jpg" alt=""></a>
+                        <a href=""><img src="assets/img/banner/4.jpg" alt=""></a>
                         <div class="banner-wrapper-content">
                             <h3>20% <br><span>off</span></h3>
-                            <h2><span>Trending</span> <br>Fashion <br>2018...</h2>
+                            <h2><span>Trending</span> <br>Fashion <br>2020...</h2>
                         </div>
                     </div>
                 </div>
@@ -491,10 +451,10 @@
                     <div class="row no-gutters">
                         <div class="col-lg-12">
                             <div class="banner-wrapper mrgn-b-4">
-                                <a href="#"><img src="assets/img/banner/5.jpg" alt=""></a>
+                                <a href="/"><img src="assets/img/banner/5.jpg" alt=""></a>
                                 <div class="banner-wrapper-content2">
                                     <h3>Winter <br>Collection.</h3>
-                                    <a href="#">shop now</a>
+                                    <a href="/">shop now</a>
                                 </div>
                             </div>
                         </div>
@@ -503,7 +463,7 @@
                             <div class="row no-gutters">
                                 <div class="col-lg-6">
                                     <div class="banner-wrapper mrgn-r-4">
-                                        <a href="#"><img src="assets/img/banner/6.jpg" alt=""></a>
+                                        <a href="/"><img src="assets/img/banner/6.jpg" alt=""></a>
                                         <div class="banner-wrapper-content3">
                                             <h3><span>new</span> <br>fashion</h3>
                                         </div>
@@ -511,7 +471,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="banner-wrapper">
-                                        <a href="#"><img src="assets/img/banner/7.jpg" alt=""></a>
+                                        <a href="/"><img src="assets/img/banner/7.jpg" alt=""></a>
                                         <div class="banner-wrapper-content4">
                                             <h4>25 December.</h4>
                                             <h2>Gift Shop</h2>
@@ -586,7 +546,7 @@
                                             </div>
                                             <div class="product-content">
                                                 <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
-                                                <span>{{$item->name}} Tk</span>
+                                                <span>{{$item->price}} Tk</span>
     
                                                 <!-- <form method="POST" action="{{ url('/order') }}">
     
@@ -633,7 +593,7 @@
                                         </div>
                                         <div class="product-content">
                                             <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->name}} Tk</span>
+                                            <span>{{$item->price}} Tk</span>
                                         </div>
                                     </div>
                                 </div>
@@ -669,7 +629,7 @@
                                         </div>
                                         <div class="product-content">
                                             <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->name}} Tk</span>
+                                            <span>{{$item->price}} Tk</span>
                                         </div>
                                     </div>
                                 </div>
@@ -705,7 +665,7 @@
                                         </div>
                                         <div class="product-content">
                                             <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->name}} Tk </span>
+                                            <span>{{$item->price}} Tk </span>
                                         </div>
                                     </div>
                                 </div>
@@ -741,7 +701,7 @@
                                         </div>
                                         <div class="product-content">
                                             <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->name}} Tk </span>
+                                            <span>{{$item->price}} Tk </span>
                                         </div>
                                     </div>
                                 </div>

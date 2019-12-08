@@ -4,11 +4,22 @@
 
 @include('inc.header')
 
+@include('inc.headcss')
+
+
+<div class="breadcrumb-area pt-205 pb-10">
+    <div class="container">
+        <div class="text-center">
+            <h1>LOGIN</h1>                  
+        </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -45,12 +56,14 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" 
+
+                                    <!-- <input class="form-check-input" type="checkbox" name="remember" id="remember" 
                                     {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
-                                    </label>
+                                    </label> -->
+
                                 </div>
                             </div>
                         </div>
@@ -74,6 +87,11 @@
         </div>
     </div>
 </div>
+
+<div class="breadcrumb-area pt-205 pb-500">
+    DIU
+</div>
+
 
 @include('inc.footer')
 

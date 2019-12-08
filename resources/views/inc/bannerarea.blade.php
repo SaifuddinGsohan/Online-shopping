@@ -24,7 +24,7 @@
                 <div class="single-banner">
                     <a href="#"><img src="assets/img/banner/3.jpg" alt=""></a>
                     <div class="banner-content banner-content-style3">
-                        <h2>Trand <br>2018.</h2>
+                        <h2>Trand <br>2020.</h2>
                     </div>
                 </div>
             </div>

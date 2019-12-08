@@ -12,7 +12,7 @@
                             <nav>
                                 <ul>
 
-                                    <li><a href="#">Home</a>
+                                    <li><a href="/">Home</a>
                                         <ul class="single-dropdown">
                                             <li><a href="{{ url('/about') }}">about us</a></li>
                                             <li><a href="{{ url('/login') }}">login</a></li>
@@ -88,7 +88,8 @@
                                 </ul>
                             </nav>
                         </div>
-                        <!-- // -->
+                        <!-- order -->
+
                         <div class="header-cart">
                             <a class="icon-cart-furniture" href="/order">
                                 <i class="ti-shopping-cart"></i>
@@ -127,6 +128,7 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>

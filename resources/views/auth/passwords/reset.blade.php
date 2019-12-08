@@ -2,13 +2,23 @@
 
 @section('content')
 
+@include('inc.header')
+
 @include('inc.headcss')
+
+<div class="breadcrumb-area pt-205 pb-10">
+    <div class="container">
+        <div class="text-center">
+            <h1>Reset Password</h1>                  
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
@@ -65,4 +75,10 @@
         </div>
     </div>
 </div>
+<div class="breadcrumb-area pt-205 pb-500">
+    DIU
+</div>
+
+@include('inc.footer')
+
 @endsection
