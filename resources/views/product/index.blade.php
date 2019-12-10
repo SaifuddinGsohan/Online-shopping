@@ -106,7 +106,7 @@
         <div class="pl-100 pr-100">
             <div class="container-fluid">
                 <div class="section-title text-center mb-60">
-                    <h2>All Products</h2>
+                    <h2>All Product</h2>
                 </div>
                 <div class="product-style">
                     
@@ -115,36 +115,46 @@
                         
                             <div class="custom-row">
 
-                                @foreach($products as $product)
+                                @foreach($product ['items'] as $item)
 
-                                    <div class="custom-col-5 custom-col-style mb-65">
-                                        <div class="product-wrapper">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="product-wrapper product-box-style mb-30">
                                             <div class="product-img">
                                                 <a href="#">
-                                                    <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
                                                 <span>hot</span>
                                                 <div class="product-action">
-                                                    <a class="animate-left" title="Wishlist" href="#">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
                                                         <i class="pe-7s-like"></i>
                                                     </a>
-                                                    <a class="animate-top" title="Add To Cart" href="#">
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
                                                         <i class="pe-7s-cart"></i>
                                                     </a>
-                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
                                                         <i class="pe-7s-look"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="product-content">
-                                                <h4><a href="{{route('product.show',$product->id)}}">{{$product->name}}</a></h4>
-                                                <span>{{$product->price}} Tk</span>
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
                                                 
-                                                <!-- /exta/ -->
-
                                             </div>
                                         </div>
                                     </div>
+
+                                    @include('inc.modal')
     
 
                                 @endforeach

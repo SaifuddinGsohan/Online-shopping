@@ -20,12 +20,12 @@ class Admin
 
         $user = Auth::user();
 
-        if($user->admin('adm')){
+        if($user->admin('Admin')){
 
             return redirect('/admin');
 
         }
-        elseif ($user->admin('com')) {
+        elseif ($user->admin('Company')) {
 
             return redirect('/product');
             

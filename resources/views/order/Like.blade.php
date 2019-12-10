@@ -32,17 +32,17 @@
                                     </thead>
                                     <tbody>
 
-                                        @foreach($products as $product)
+                                        @foreach($lists as $list)
 
                                         <tr>
-                                            <td class="product-remove"><a href="#"><i class="pe-7s-close"></i></a></td>
+                                            <td class="product-remove"><a href="/like/{{$list->id}}/delete"><i class="pe-7s-close"></i></a></td>
                                             <td class="product-thumbnail">
-                                                <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
+                                                <a href="#"><img src="{{ asset('storage') }}/{{ $list->photo }}" alt=""></a>
                                             </td>
-                                            <td class="product-name"><a href="#">Wooden Furniture </a></td>
+                                            <td class="product-name"><a href="{{route('product.show',$list->id)}}">{{$list->name}}</a></td>
                                             
                                             
-                                            <td class="product-subtotal">$165.00</td>
+                                            <td class="product-subtotal">{{$list->price}} Tk</td>
                                         </tr>
 
                                         @endforeach

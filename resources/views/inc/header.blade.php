@@ -1,3 +1,4 @@
+ @php( $item =[])
  <!-- header start -->
         <header>
             <div class="header-top-furniture wrapper-padding-2 res-header-sm">
@@ -23,81 +24,80 @@
                                         </ul>
                                     </li>
 
-                                    <li><a href="#">Devices</a>
+                                    <li><a href="{{ url('searchc/1') }}">Devices</a>
                                         
                                         <ul class="single-dropdown">
-                                            <li><a href="shop-grid-2-col.html">Mobile</a></li>
-                                            <li><a href="shop-grid-3-col.html">Computer</a></li>
-                                            <li><a href="shop-grid-box.html">Tv</a></li>
-                                            <li><a href="shop-list-1-col.html">Ac</a></li>
-                                            <li><a href="shop-list-2-col.html">Firig</a></li>
-                                            <li><a href="shop-list-box.html">Oven</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Mobile</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Computer</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Tv</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Ac</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Firig</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Oven</a></li>
                                         </ul>
                                           
                                     </li>
 
-                                    <li><a href="#">Women</a>
+                                    <li><a href="{{ url('searchc/2') }}">Women</a>
                                         
                                         <ul class="single-dropdown">
-                                            <li><a href="">Top</a></li>
-                                            <li><a href="">Ground</a></li>
-                                            <li><a href="">Top</a></li>
-                                            <li><a href="">Top</a></li>
-                                            <li><a href="">list</a></li>
-                                            <li><a href="">column</a></li>
-                                            <li><a href="">style</a></li>
-                                            <li><a href="">shopp</a></li>
-                                            <li><a href="">shli</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Top</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Ground</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Top</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Top</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">list</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">column</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">style</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">shopp</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">shli</a></li>
                                         </ul>
                                             
                                     </li>
 
-                                    <li><a href="#">Men</a>
+                                    <li><a href="{{ url('searchc/3') }}">Men</a>
                                         
                                         <ul class="single-dropdown">
-                                            <li><a href="shop-grid-2-col.html">T-shart</a></li>
-                                            <li><a href="shop-grid-3-col.html">Pant</a></li>
-                                            <li><a href="shop.html">Gabadin</a></li>
-                                            <li><a href="shop-grid-box.html">Shart</a></li>
-                                            <li><a href="shop-list-1-col.html">Show</a></li>
-                                            <li><a href="shop-list-2-col.html">Cast</a></li>
-                                            <li><a href="cart.html">Scat</a></li>
-                                            <li><a href="wishlist.html">Shlt</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">T-shart</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Pant</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Perfume</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Shirt</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Shoes</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Accesories</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Facial item</a></li>
                                         </ul>
 
                                     </li>
 
-                                    <li><a href="#">Sports</a>
+                                    <li><a href="{{ url('searchc/5') }}">Sports</a>
                                         
                                         <ul class="single-dropdown">
-                                            <li><a href="shop-grid-2-col.html">Footbol</a></li>
-                                            <li><a href="shop-grid-3-col.html">Cricket</a></li>
-                                            <li><a href="shop.html">Golf</a></li>
-                                            <li><a href="shop-grid-box.html">Pool</a></li>
-                                            <li><a href="shop-list-1-col.html">Tennis</a></li>
-                                            <li><a href="shop-list-2-col.html">Hockey</a></li>
-                                            <li><a href="shop-list-box.html">Basketball</a></li>
-                                            <li><a href="cart.html">Table tennis</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Footbol</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Cricket</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Golf</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Pool</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Tennis</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Hockey</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Basketball</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Table tennis</a></li>
                                         </ul>
 
                                     </li>
 
                                     <li><a href="{{ url('/contact') }}">contact</a></li>
-                                    <li><a href="{{ url('/about') }}">about us</a></li>
+                                    <!-- <li><a href="{{ url('/about') }}">about us</a></li> -->
 
                                 </ul>
                             </nav>
                         </div>
                         <!-- order -->
 
-                        <div class="header-cart">
+                       <!--  <div class="header-cart">
                             <a class="icon-cart-furniture" href="/order">
                                 <i class="ti-shopping-cart"></i>
                                 <span class="shop-count-furniture green">02</span>
                             </a>
                             <ul class="cart-dropdown">
 
-                                <!-- // -->
+                                
                                 <li class="single-product-cart">
                                     <div class="cart-img">
                                         <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
@@ -124,10 +124,10 @@
 
                                 <li class="cart-btn-wrapper">
                                     <a class="cart-btn btn-hover" href="/order">view cart</a>
-                                    <!-- <a class="cart-btn btn-hover" href="#">checkout</a> -->
+                                     <a class="cart-btn btn-hover" href="#">checkout</a> 
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>

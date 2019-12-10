@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Product;
+use App\Categories;
+use Storage;
 
 
 class ProductC extends Controller
@@ -17,13 +19,25 @@ class ProductC extends Controller
     public function index()
     {
         //
-        $user = Auth::user()->id;
+         $user = Auth::user();
 
-        $products = Product::all()->where('user_id',$user);
+        $product ['items'] = Product::where('user_id', Auth::id())->get();
+
+        if($user->admin('Admin')){
+
+            return view('product.index',compact('product'));
+
+        }
+        elseif ($user->admin('Company')) {
+
+            return view('product.index',compact('product'));
+            
+        }
 
 
+        return redirect('/');
 
-        return view('product.index',compact('products'));
+        
     }
 
     /**
@@ -36,7 +50,21 @@ class ProductC extends Controller
         //
         $user = Auth::user();
 
-        return view('product.create',compact('user'));
+        if($user->admin('Admin')){
+
+            return view('product.create',compact('user'));
+
+        }
+        elseif ($user->admin('Company')) {
+
+            return view('product.create',compact('user'));
+            
+        }
+
+
+        return redirect('/');
+
+        
 
     }
 
@@ -48,13 +76,25 @@ class ProductC extends Controller
      */
     public function store(Request $request)
     {
-        //
-        //return $request->all();
-        Product::create($request->all());
 
-        //$produck= new Produck;
-        //$produck->name = $request->name;
-        //$produck->save();
+        $image = '';
+
+        if($request->has('photo')){
+             $image = $request->file('photo')->store('photos');
+         }
+
+        $products = new Product();
+        $products->name = $request->name;
+        $products->details = $request->details;
+        $products->description = $request->description;
+        $products->price = $request->price;
+        $products->user_id = Auth::id();
+        $products->photo = $image;
+        $products->tag = $request->tag;
+        $products->tag1 = $request->tag1;
+        $products->tag2 = $request->tag2;
+        $products->categorie_id = $request->categorie_id;
+        $products->save();
 
         return redirect('/product');
 
@@ -78,19 +118,9 @@ class ProductC extends Controller
 
         $product ['items'] = Product::where('user_id',$pu_id)->get();
 
-        // if($user->admin('adm')){
-
-        //     return view('product.show',compact('product'));
-
-        // }
-        // elseif ($user->admin('com')) {
-
-        //     return view('product.show',compact('product'));
-            
-        // }
-
 
         return view('product.show',compact('product'));
+    
     }
 
     /**
@@ -144,18 +174,27 @@ class ProductC extends Controller
     public function search($qury)
     {
         //
-
-        //return $qury;
-
         $product = [];
 
+        $product ['items'] = Product::where('name',$qury)->orWhere('tag' ,$qury)->orWhere('tag1',$qury)->get();
 
+      
+        
+         return view('product.search',compact('product'));
 
-        $product ['items'] = Product::where('name',$qury)->get();
+    }
 
+    public function searchCategorie($qury)
+    {
+  
+        $product = [];
+
+        $product ['items'] = Product::where('categorie_id', $qury )->get();
         
         return view('product.search',compact('product'));
 
     }
+
+    
 
 }

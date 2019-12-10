@@ -34,21 +34,21 @@
 
                                     <tbody>
                                         
+                                        
                                         @foreach($lists as $list)
 
                                             <tr>
-                                                <td class="product-remove"><a href="/order/{{$list->id}}"><i class="pe-7s-close"></i></a></td>
-
-                                                {{csrf_field()}}
-                                                <input type="hidden" name="_method" value="DELETE">
+                                                <td class="product-remove"><a href="/order/{{$list->id}}/delete"><i class="pe-7s-close"></i></a></td>
 
                                                 <td class="product-thumbnail">
-                                                    <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
+                                                    <a href="#"><img src="{{ asset('storage') }}/{{ $list->photo }}" alt=""></a>
                                                 </td>
 
                                                 <td class="product-name"><a href="{{route('product.show',$list->id)}}">{{$list->name}} </a></td>
 
-                                                <td class="product-price-cart"><span class="amount">$165.00</span></td>
+                                                <td class="product-price-cart"><span class="amount">{{$list->price}}.0 Tk</span></td>
+
+                                                
 
                                                 <!-- <td class="product-quantity">
                                                     <input value="1" type="number">
@@ -57,6 +57,7 @@
                                                 <td class="product-subtotal">$165.00</td> -->
 
                                             </tr>
+                                            
 
                                         @endforeach
 
@@ -80,7 +81,7 @@
                                         <div class="coupon2">
 
                                             <!-- // -->
-                                            <input class="button" name="update_cart" value="Update cart" type="submit">
+                                            <!-- <input class="button" name="update_cart" value="Update cart" type="submit"> -->
 
 
                                         </div>
@@ -90,12 +91,12 @@
                             <div class="row">
                                 <div class="col-md-5 ml-auto">
                                     <div class="cart-page-total">
-                                        <h2>Cart totals</h2>
+                                        <!-- <h2>Cart totals</h2>
                                         <ul>
-                                            <!-- <li>Subtotal<span>100.00</span></li> -->
-                                            <li>Total Tk<span>100.00</span></li>
-                                        </ul>
-                                        <a href="order/checkout">Proceed to checkout</a>
+                                            <li>Subtotal<span>100.00</span></li>
+                                            <li>Total Tk<span>{{ $list ['Tp'] }}.0 Tk</span></li>
+                                        </ul> -->
+                                        <a href="/">Proceed to checkout</a>
                                     </div>
                                 </div>
                             </div>

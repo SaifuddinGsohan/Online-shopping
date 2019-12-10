@@ -21,11 +21,11 @@ class OrderC extends Controller
     {
         //
 
-        $uid= Auth::user()->id;
-        $lists=[];
-        
+       // $uid= Auth::user()->id;
 
-        $orders = Order::where('user_id', $uid)->get();
+        $lists=[];
+
+        $orders = Order::where('user_id', Auth::id())->get();
         $products = Product::all();
 
         //return $list[]= $producks->;
@@ -39,6 +39,7 @@ class OrderC extends Controller
                 if($product->id == $order->product_id){
 
                    $lists[]= $product;
+                   // $lists['tp'] =+ $product->price; 
                 }
             }
         }
@@ -59,9 +60,25 @@ class OrderC extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($id)
     {
+       // return $id;
+
+        $user = Auth::user();
+
+        $products = new Order();
+        $products->product_id = $id;
+        $products->user_id = $user->id;
+
+        // return $products;
+        $products->save();
         
+  
+        //$pid = $request->produck_id;
+        //$producks = Produck::findOrFail($pid);
+
+        return redirect('/');
+
         //$user = Auth::user();
 
         //return view('produck.create',compact('user'));
@@ -79,7 +96,7 @@ class OrderC extends Controller
         //
          return $request;
         //return add;
-        $user = Auth::user();
+        //$user = Auth::user();
 
         //$item = [];
         //$item['produck_id'] = $request->produck_id;
@@ -166,32 +183,58 @@ class OrderC extends Controller
      public function like()
     {
         
-        $uid = Auth::user()->id;
-        $producks=Like::all()->where('user_id',$id);
 
-        //$produck = Produck::findOrFail($id);
+        $lists=[];
+        
 
-        return view('order.like',compact('producks'));
+        $Likes = Like::where('user_id', Auth::id())->get();
+        $products = Product::all();
+
+        foreach($Likes as $Like){
+            
+            foreach($products as $product){
+
+                if($product->id == $Like->product_id){
+
+                   $lists[]= $product;
+                }
+            }
+        }
+
+        return view('order.like',compact('lists'));
 
     }
 
-    public function storelike(Request $request)
+    public function storelike($id)
     {
         
-        return $request;
-        //return add;
-        $user = Auth::user();
+         $user = Auth::user();
 
-        $item = [];
-        $item['produck_id'] = $request->produck_id;
-        $item['user_id'] = $user->id;
+        $products = new like();
+        $products->product_id = $id;
+        $products->user_id = $user->id;
 
-        like::create($item);
+       
+        $products->save();
+
+        
   
         //$pid = $request->produck_id;
         //$producks = Produck::findOrFail($pid);
 
-        //return view('index');
+        return redirect('/');
+
+    }
+
+    public function likeDelete($id)
+    {
+        //
+
+        $uid = Auth::user()->id;
+
+        like::where([['user_id',$uid],['product_id',$id]])->delete();
+
+        return redirect('/like');
 
     }
 

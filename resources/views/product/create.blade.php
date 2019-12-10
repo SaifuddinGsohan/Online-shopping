@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-12">
-                            <form method="POST" action="/product">
+                            <form method="POST" action="/product" enctype="multipart/form-data">
 
                                 {{csrf_field()}}
                                 <input type="hidden" name="user_id" value="{{$user->id}}">
@@ -66,13 +66,18 @@
                                                     <option name="categorie_id" value="1">Device</option>  
                                                     <option name="categorie_id" value="2">Women</option>
                                                     <option name="categorie_id" value="3">Men</option>
-                                                    <option name="categorie_id" value="4">Sport</option>
-                                                    <option name="categorie_id" value="5">Kids</option>            
+                                                    <option name="categorie_id" value="5">Sport</option>
+                                                    <option name="categorie_id" value="4">Kids</option>            
                                                 </select>                                       
                                             </div>
                                         </div>
 
+                                        <div class="order-notes">
+                                            <label for="exampleFormControlFile1">Example file input</label>
+                                            <input type="file" class="form-control-file" name="photo" id="exampleFormControlFile1">
+                                        </div>
 
+                                        
 
 
                                         <div class="order-notes">
@@ -86,6 +91,15 @@
                                                 <label>Description</label>
                                                 <textarea id="checkout-mess" name="description" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery." ></textarea>
                                             </div>                                  
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="checkout-form-list">
+                                                <label>Tag <span class="required">*</span></label>
+                                                <input type="text" name="tag" placeholder="" />
+                                                <input type="text" name="tag1" placeholder="" />
+                                                <input type="hidden" name="tag2" value="all">
+                                            </div>
                                         </div>
 
                                         <!-- <div class="col-md-6">

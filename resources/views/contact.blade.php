@@ -75,7 +75,7 @@
                                         <i class="ti-location-pin"></i>
                                     </div>
                                     <div class="contact-info-text">
-                                        <p><span>Address:</span>  1234 - Bandit Tringi lAliquam <br> Vitae. New York</p>
+                                        <p><span>Address:</span>  4/2, Daffodil Tower, Mirpur Rd, Dhaka 1207 <br> Dhaka. Bangladesh</p>
                                     </div>
                                 </div>
                                 <div class="single-contact-info">
@@ -83,7 +83,7 @@
                                         <i class="pe-7s-mail"></i>
                                     </div>
                                     <div class="contact-info-text">
-                                        <p><span>Email: </span> Support@plazathemes.com</p>
+                                        <p><span>Email: </span> Diu@Diu.edu.bd.com</p>
                                     </div>
                                 </div>
                                 <div class="single-contact-info">
@@ -91,7 +91,7 @@
                                         <i class="pe-7s-call"></i>
                                     </div>
                                     <div class="contact-info-text">
-                                        <p><span>Phone: </span>  (800) 0123 456 789</p>
+                                        <p><span>Phone: </span>  +88 (017) 11322990 or +88 (012) xxxxxxxx</p>
                                     </div>
                                 </div>
                             </div>

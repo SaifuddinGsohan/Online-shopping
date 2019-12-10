@@ -1,5 +1,7 @@
+@foreach($product ['items'] as $item)
+
 <!-- modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="exampleModal{{ $item->id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span class="pe-7s-close" aria-hidden="true"></span>
         </button>
@@ -11,7 +13,7 @@
                             <div class="quick-view-tab-content tab-content">
 
                                 <div class="tab-pane active show fade" id="modal1" role="tabpanel">
-                                    <img src="assets/img/quick-view/l1.jpg" alt="">
+                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                 </div>
 
                                 <!-- <div class="tab-pane fade" id="modal2" role="tabpanel">
@@ -37,10 +39,11 @@
                     </div>
                     <div class="qwick-view-right">
                         <div class="qwick-view-content">
-                            <h3>Handcrafted Supper Mug</h3>
+                            
+                            <h3>{{$item->name}}</h3>
                             <div class="price">
-                                <span class="new">$90.00</span>
-                                <span class="old">$120.00  </span>
+                                <span class="new">{{$item->price}} TK</span>
+                                <span class="old">{{$item->price + 50}} Tk</span>
                             </div>
                             <!-- <div class="rating-number">
                                 <div class="quick-view-rating">
@@ -54,7 +57,7 @@
                                     <span>2 Ratting (S)</span>
                                 </div>
                             </div> -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do tempor incididun ut labore et dolore magna aliqua. Ut enim ad mi , quis nostrud veniam exercitation .</p>
+                            <p>{{$item->details}}</p>
                             <div class="quick-view-select">
                                 <!-- <div class="select-option-part">
                                     <label>Size*</label>
@@ -79,10 +82,10 @@
                                     <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
                                 </div> -->
                                 <div class="quickview-btn-cart">
-                                    <a class="btn-hover-black" href="#">Add Order</a>
+                                    <a class="btn-hover-black" href="order/{{$item->id}}/create">Add Order</a>
                                 </div>
                                 <div class="quickview-btn-wishlist">
-                                    <a class="btn-hover" href="#"><i class="pe-7s-like"></i></a>
+                                    <a class="btn-hover" href="like/{{$item->id}}/store"><i class="pe-7s-like"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -91,4 +94,5 @@
             </div>
         </div>
     </div>
-    
+
+    @endforeach

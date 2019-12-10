@@ -25,11 +25,11 @@
                             <div class="footer-widget-content">
                                 <ul>
                                     
-                                    <li><a href="shop.html">Device</a></li>
-                                    <li><a href="shop.html">Women</a></li>
-                                    <li><a href="shop.html">Man</a></li>
-                                    <li><a href="shop.html">kids</a></li>
-                                    <li><a href="shop.html">Sport</a></li>
+                                    <li><a href="{{ url('searchc/1') }}">Device</a></li>
+                                    <li><a href="{{ url('searchc/2') }}">Women</a></li>
+                                    <li><a href="{{ url('searchc/3') }}">Man</a></li>
+                                    <li><a href="{{ url('searchc/4') }}">kids</a></li>
+                                    <li><a href="{{ url('searchc/5') }}">Sport</a></li>
                                     
                                 </ul>
                             </div>

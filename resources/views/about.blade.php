@@ -17,13 +17,13 @@
                 <div class="breadcrumb-content text-center">
                     <h2>about us</h2>
                     <ul>
-                        <li><a href="#">home</a></li>
+                        <li><a href="/">home</a></li>
                         <li> about us </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="about-story pt-95 pb-100">
+        <!-- <div class="about-story pt-95 pb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -171,7 +171,7 @@
         </div>
         <div class="team-area">
             <img src="assets/img/banner/39.jpg" alt="">
-        </div>
+        </div> -->
 
         
         <!-- testimonials area start -->
@@ -179,12 +179,11 @@
             <div class="container">
                 <div class="testimonials-active owl-carousel">
                     <div class="single-testimonial-2 text-center">
-                        <img src="assets/img/team/1.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        
+                        <p>Daffodil International University is a private university located in Dhanmondi, Dhaka, Bangladesh. It was established on 24 January 2002 under the The Private University Act of 1992..</p>
                         <img src="assets/img/team/2.png" alt="">
-                        <h4>tayeb rayed</h4>
-                        <span>uiux Designer</span>
+                        <h4>Daffodil International University</h4>
+                        <span>DIU</span>
                     </div>
                 </div>
             </div>

@@ -196,31 +196,42 @@
                                     <div id="grid-sidebar7" class="tab-pane fade active show">
                                         <div class="row">
 
-                                            <div class="col-lg-4 col-md-6">
-                                                <div class="product-wrapper product-box-style mb-30">
-                                                    <div class="product-img">
-                                                        <a href="#">
-                                                            <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
-                                                        </a>
-                                                        <span>hot</span>
-                                                        <div class="product-action">
-                                                            <a class="animate-left" title="Wishlist" href="#">
-                                                                <i class="pe-7s-like"></i>
-                                                            </a>
-                                                            <a class="animate-top" title="Add To Cart" href="#">
-                                                                <i class="pe-7s-cart"></i>
-                                                            </a>
-                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                                <i class="pe-7s-look"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content">
-                                                        <h4><a href="#">Homme Tapered Smart </a></h4>
-                                                        <span>$115.00</span>
-                                                    </div>
+                                            <div class="custom-col-5 custom-col-style mb-65">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
+                                                </a>
+                                                <span>hot</span>
+                                                <div class="product-action">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        <i class="pe-7s-like"></i>
+                                                    </a>
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                        <i class="pe-7s-look"></i>
+                                                    </a>
                                                 </div>
-                                           </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
                                             
 
 
@@ -252,7 +263,7 @@
                                                         </div>
                                                         <div class="product-list-cart-wishlist">
                                                             <div class="product-list-cart">
-                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
+                                                                <a class="btn-hover list-btn-style" href="order/{{$item->id}}/create">add to cart</a>
                                                             </div>
                                                             <div class="product-list-wishlist">
                                                                 <a class="btn-hover list-btn-wishlist" href="#">

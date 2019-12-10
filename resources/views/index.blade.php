@@ -22,9 +22,9 @@
                                     <li><a href="{{ url('/about') }}">about us</a></li>
                                     <li><a href="{{ url('/login') }}">login</a></li>
                                     <li><a href="{{ route('register') }}">register</a></li>
-                                    <li><a href="{{ url('/order') }}">cart page</a></li>
+                                    <li><a href="{{ url('/order') }}">Order page</a></li>
                                     <li><a href="">checkout</a></li>
-                                    <li><a href="{{ url('/like') }}">wishlist</a></li>
+                                    <li><a href="{{ url('/like') }}">Like</a></li>
                                     <li><a href="{{ url('/contact') }}">contact</a></li>
                                 </ul>
                             </li>
@@ -84,65 +84,45 @@
                             <li><a href="#">Electronic Devices<span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
+                                        <h4 class="searchc/1">Devices</h4>
                                         <ul>
-                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                            <li><a href="shop.html">grid 4 column</a></li>
-                                            <li><a href="shop-grid-box.html">grid box style</a></li>
-                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                            <li><a href="shop-list-box.html">list box style</a></li>
-                                            <li><a href="cart.html">shopping cart</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="{{ url('search/Mobile') }}">Mobile</a></li>
+                                            <li><a href="{{ url('search/computer') }}">Computer</a></li>
+                                            <li><a href="{{ url('search/printers') }}">Printers</a></li>
+                                            <li><a href="{{ url('search/cameras') }}">cameras</a></li>
+                                            <li><a href="{{ url('search/fridge') }}">Fridge</a></li>
+                                            <li><a href="{{ url('search/oven') }}">Oven</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li><a href="#">Women's Fashion<span>New</span></a>
+                            <li><a href="searchc/2">Women's Fashion<span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
-                                        <h4 class="mega-subtitle">Bottoms</h4>
+                                        <h4 class="mega-subtitle">New Sale</h4>
                                         <ul>
-                                            <li><a href=""> grid 2 column</a></li>
-                                            <li><a href=""> grid 3 column</a></li>
-                                            <li><a href="">grid 4 column</a></li>
-                                            <li><a href="">grid box style</a></li>
-                                            <li><a href=""> list 1 column</a></li>
-                                            <li><a href="">list 2 column</a></li>
-                                            <li><a href="">list box style</a></li>
-                                            <li><a href="">shopping cart</a></li>
-                                            <li><a href="">wishlist</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="mega-dropdown-style mega-common2 mega-common4">
-                                        <h4 class="mega-subtitle">Tops & Sets</h4>
-                                        <ul>
-                                            <li><a href=""> grid 2 column</a></li>
-                                            <li><a href=""> grid 3 column</a></li>
-                                            <li><a href="">grid 4 column</a></li>
-                                            <li><a href="">grid box style</a></li>
-                                            <li><a href=""> list 1 column</a></li>
-                                            <li><a href="">list 2 column</a></li>
-                                            <li><a href="">list box style</a></li>
-                                            <li><a href="">shopping cart</a></li>
-                                            <li><a href="">wishlist</a></li>
+                                            <li><a href="{{ url('search/ground') }}">Ground</a></li>
+                                            <li><a href="{{ url('search/top') }}">Top</a></li>
+                                            <li><a href="{{ url('search/geans') }}">Geans</a></li>
+                                            <li><a href="{{ url('search/list') }}">list</a></li>
+                                            <li><a href="{{ url('search/column') }}">column</a></li>
+                                            <li><a href="{{ url('search/style') }}">style</a></li>
+                                            <li><a href="{{ url('search/shopp') }}">shopp</a></li>
+                                            <li><a href="{{ url('search/shli') }}">shli</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <h4 class="mega-subtitle">Weddings & Events</h4>
                                         <ul>
-                                            <li><a href="product-de">tab style 1</a></li>
-                                            <li><a href="product-deta">tab style 2</a></li>
-                                            <li><a href="product-deta"> tab style 3</a></li>
-                                            <li><a href="product-deta">sticky style</a></li>
-                                            <li><a href="product-deta">sticky style 2</a></li>
-                                            <li><a href="product-deta">gallery style</a></li>
-                                            <li><a href="product-deta">gallery style 2</a></li>
-                                            <li><a href="product-deta">fixed image style</a></li>
-                                            <li><a href="product-deta">fixed image style 2</a></li>
+                                            <li><a href="{{ url('search/banarasee') }}">Banarasee</a></li>
+                                            <li><a href="{{ url('search/lahenga') }}">Lahenga</a></li>
+                                            <li><a href="{{ url('search/gaoun') }}">Gaoun</a></li>
+                                            <li><a href="{{ url('search/saree') }}">saree</a></li>
+                                            <li><a href="{{ url('search/makeup') }}">Makeup Item</a></li>
+                                            <li><a href="{{ url('search/shoes') }}">Shoes</a></li>
+                                            <li><a href="{{ url('search/ornaments') }}">Ornaments</a></li>
                                         </ul>
                                     </div>
 
@@ -150,72 +130,52 @@
                                 </div>
                             </li>
 
-                            <li><a href="#">Men's Fashion</a>
+                            <li><a href="searchc/3">Men's Fashion</a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <h4 class="mega-subtitle">Hot Sale</h4>
                                         <ul>
-                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                            <li><a href="shop.html">grid 4 column</a></li>
-                                            <li><a href="shop-grid-box.html">grid box style</a></li>
-                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                            <li><a href="shop-list-box.html">list box style</a></li>
-                                            <li><a href="cart.html">shopping cart</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="{{ url('search/t_shart') }}">T-shart</a></li>
+                                            <li><a href="{{ url('search/pant') }}">Pant</a></li>
+                                            <li><a href="{{ url('search/perfume') }}">Perfume</a></li>
+                                            <li><a href="{{ url('search/shirt') }}">Shirt</a></li>
+                                            <li><a href="{{ url('search/shoes') }}">Shoes</a></li>
+                                            <li><a href="{{ url('search/accesories') }}">Accesories</a></li>
+                                            <li><a href="{{ url('search/facial') }}">Facial item</a></li>
                                         </ul>
                                     </div>
-                                    <div class="mega-dropdown-style mega-common2 mega-common4">
-                                        <h4 class="mega-subtitle">Bottoms</h4>
-                                        <ul>
-                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                            <li><a href="shop.html">grid 4 column</a></li>
-                                            <li><a href="shop-grid-box.html">grid box style</a></li>
-                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                            <li><a href="shop-list-box.html">list box style</a></li>
-                                            <li><a href="cart.html">shopping cart</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
-                                        </ul>
-                                    </div>
+                                    
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <h4 class="mega-subtitle">Accessories</h4>
                                         <ul>
-                                            <li><a href="product-details.html">tab style 1</a></li>
-                                            <li><a href="product-details-2.html">tab style 2</a></li>
-                                            <li><a href="product-details-3.html"> tab style 3</a></li>
-                                            <li><a href="product-details-4.html">sticky style</a></li>
-                                            <li><a href="product-details-5.html">sticky style 2</a></li>
-                                            <li><a href="product-details-6.html">gallery style</a></li>
-                                            <li><a href="product-details-7.html">gallery style 2</a></li>
-                                            <li><a href="product-details-8.html">fixed image style</a></li>
-                                            <li><a href="product-details-9.html">fixed image style 2</a></li>
+                                            <li><a href="{{ url('search/watches') }}">Watches</a></li>
+                                            <li><a href="{{ url('search/tie') }}">Tie</a></li>
+                                            <li><a href="{{ url('search/belt') }}">Belt</a></li>
+                                            <li><a href="{{ url('search/band') }}">band</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="#">Sports & Outdoor</a>
+                            <li><a href="searchc/5">Sports & Outdoor</a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <h4 class="mega-subtitle"> shop layout</h4>
                                         <ul>
-                                            <li><a href="shop-grid-2-col.html"> grid 2 column</a></li>
-                                            <li><a href="shop-grid-3-col.html"> grid 3 column</a></li>
-                                            <li><a href="shop.html">grid 4 column</a></li>
-                                            <li><a href="shop-grid-box.html">grid box style</a></li>
-                                            <li><a href="shop-list-1-col.html"> list 1 column</a></li>
-                                            <li><a href="shop-list-2-col.html">list 2 column</a></li>
-                                            <li><a href="shop-list-box.html">list box style</a></li>
-                                            <li><a href="cart.html">shopping cart</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
+                                             <li><a href="shop-grid-2-col.html">Footbol</a></li>
+                                            <li><a href="shop-grid-3-col.html">Cricket</a></li>
+                                            <li><a href="shop.html">Golf</a></li>
+                                            <li><a href="shop-grid-box.html">Pool</a></li>
+                                            <li><a href="shop-list-1-col.html">Tennis</a></li>
+                                            <li><a href="shop-list-2-col.html">Hockey</a></li>
+                                            <li><a href="shop-list-box.html">Basketball</a></li>
+                                            <li><a href="cart.html">Table tennis</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
 
-                            <li><a href="#">Babies & Toys</a>
+                            <li><a href="searchc/4">Babies & Toys</a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
                                         <ul>
@@ -306,13 +266,13 @@
 
                     <!-- order -->
 
-                    @include('inc.order')
+                    
 
 
                 </div>
 
 
-                <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                <!-- <div class="mobile-menu-area clearfix d-md-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
@@ -376,7 +336,7 @@
                             </ul>
                         </nav>
                     </div>
-                </div>
+                </div> -->
 
 
                 <div class="slider-area ">
@@ -391,9 +351,9 @@
                                 <div class="slider-img-1">
                                     <img src="assets/img/slider/9.png" alt="">
                                 </div>
-                                <div class="slider-img-2">
+                                <!-- <div class="slider-img-2">
                                     <img class="tilter" src="assets/img/slider/7.png" alt="">
-                                </div>
+                                </div> -->
                                 <div class="slider-img-3">
                                     <img src="assets/img/slider/8.png" alt="">
                                 </div>
@@ -529,17 +489,26 @@
                                         <div class="product-wrapper">
                                             <div class="product-img">
                                                 <a href="#">
-                                                    <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
                                                 <span>hot</span>
                                                 <div class="product-action">
-                                                    <a method class="animate-left" title="Wishlist" href="{{route('storelike',$item->id)}}">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
                                                         <i class="pe-7s-like"></i>
                                                     </a>
-                                                    <a media="POST" class="animate-top" title="Add To Cart" href="{{route('order.store',$item->id)}}">
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
                                                         <i class="pe-7s-cart"></i>
                                                     </a>
-                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
                                                         <i class="pe-7s-look"></i>
                                                     </a>
                                                 </div>
@@ -548,17 +517,11 @@
                                                 <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
                                                 <span>{{$item->price}} Tk</span>
     
-                                                <!-- <form method="POST" action="{{ url('/order') }}">
-    
-                                                    {{csrf_field()}}
-                                                    <input type="hidden" name="produck_id" value="{{$item->id}}">
-                                                    <input type="submit" name="Add" value="submit">
-    
-                                                </form>
-                                                 -->
+                                                
                                             </div>
                                         </div>
                                     </div>
+                                    @include('inc.modal')
     
 
                                 @endforeach
@@ -570,33 +533,45 @@
                         <div class="tab-pane fade" id="home2" role="tabpanel">
                             <div class="custom-row">
 
-                                @foreach($product ['items'] as $item)
+                                @foreach($product ['itemsW'] as $item)
 
                                 <div class="custom-col-5 custom-col-style mb-65">
-                                    <div class="product-wrapper">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img src="assets/img/product/fashion-colorful/5.jpg" alt="">
-                                            </a>
-                                            <span>hot</span>
-                                            <div class="product-action">
-                                                <a class="animate-left" title="Wishlist" href="#">
-                                                    <i class="pe-7s-like"></i>
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
-                                                <a class="animate-top" title="Add To Cart" href="#">
-                                                    <i class="pe-7s-cart"></i>
-                                                </a>
-                                                <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                    <i class="pe-7s-look"></i>
-                                                </a>
+                                                <span>hot</span>
+                                                <div class="product-action">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        <i class="pe-7s-like"></i>
+                                                    </a>
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
+                                                        <i class="pe-7s-look"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
+                                                
                                             </div>
                                         </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->price}} Tk</span>
-                                        </div>
                                     </div>
-                                </div>
+                                @include('inc.modal')
                                 
                                 @endforeach
 
@@ -607,32 +582,44 @@
                         <div class="tab-pane fade" id="home3" role="tabpanel">
                             <div class="custom-row">
 
-                                @foreach($product ['items'] as $item)
+                                @foreach($product ['itemsM'] as $item)
                                 <div class="custom-col-5 custom-col-style mb-65">
-                                    <div class="product-wrapper">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img src="assets/img/product/fashion-colorful/3.jpg" alt="">
-                                            </a>
-                                            <span>hot</span>
-                                            <div class="product-action">
-                                                <a class="animate-left" title="Wishlist" href="#">
-                                                    <i class="pe-7s-like"></i>
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
-                                                <a class="animate-top" title="Add To Cart" href="#">
-                                                    <i class="pe-7s-cart"></i>
-                                                </a>
-                                                <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                    <i class="pe-7s-look"></i>
-                                                </a>
+                                                <span>hot</span>
+                                                <div class="product-action">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        <i class="pe-7s-like"></i>
+                                                    </a>
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
+                                                        <i class="pe-7s-look"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
+                                                
                                             </div>
                                         </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->price}} Tk</span>
-                                        </div>
                                     </div>
-                                </div>
+                                @include('inc.modal')
                                 
                                 @endforeach
 
@@ -643,32 +630,44 @@
                         <div class="tab-pane fade" id="home4" role="tabpanel">
                             <div class="custom-row">
 
-                                @foreach($product ['items'] as $item)
-                                <div class="custom-col-5 custom-col-style mb-65">
-                                    <div class="product-wrapper">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img src="assets/img/product/fashion-colorful/5.jpg" alt="">
-                                            </a>
-                                            <span>hot</span>
-                                            <div class="product-action">
-                                                <a class="animate-left" title="Wishlist" href="#">
-                                                    <i class="pe-7s-like"></i>
+                                @foreach($product ['itemsD'] as $item)
+                                    <div class="custom-col-5 custom-col-style mb-65">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
-                                                <a class="animate-top" title="Add To Cart" href="#">
-                                                    <i class="pe-7s-cart"></i>
-                                                </a>
-                                                <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                    <i class="pe-7s-look"></i>
-                                                </a>
+                                                <span>hot</span>
+                                                <div class="product-action">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        <i class="pe-7s-like"></i>
+                                                    </a>
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
+                                                        <i class="pe-7s-look"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
+                                                
                                             </div>
                                         </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->price}} Tk </span>
-                                        </div>
                                     </div>
-                                </div>
+                                @include('inc.modal')
                                 
                                 @endforeach
 
@@ -679,32 +678,45 @@
                         <div class="tab-pane fade" id="home5" role="tabpanel">
                             <div class="custom-row">
 
-                                @foreach($product ['items'] as $item)
-                                <div class="custom-col-5 custom-col-style mb-65">
-                                    <div class="product-wrapper">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img src="assets/img/product/fashion-colorful/5.jpg" alt="">
-                                            </a>
-                                            <span>hot</span>
-                                            <div class="product-action">
-                                                <a class="animate-left" title="Wishlist" href="#">
-                                                    <i class="pe-7s-like"></i>
+                                @foreach($product ['itemsK'] as $item)
+                                    <div class="custom-col-5 custom-col-style mb-65">
+                                        <div class="product-wrapper">
+                                            <div class="product-img">
+                                                <a href="#">
+                                                    <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
-                                                <a class="animate-top" title="Add To Cart" href="#">
-                                                    <i class="pe-7s-cart"></i>
-                                                </a>
-                                                <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                    <i class="pe-7s-look"></i>
-                                                </a>
+                                                <span>hot</span>
+                                                <div class="product-action">
+                                                    {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                    <a class="animate-left" title="Like" href="like/{{$item->id}}/store">
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        <i class="pe-7s-like"></i>
+                                                    </a>
+
+                                                    <a class="animate-top" title="Add To Order" href="order/{{$item->id}}/create">
+
+                                                        {{csrf_field()}}
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        
+                                                        <i class="pe-7s-cart"></i>
+                                                    </a>
+                                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal{{$item->id}}" href="#{{$item->id}}">
+                                                        <i class="pe-7s-look"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h4><a href="{{route('product.show',$item->id)}}"> {{$item->name}} </a></h4>
+                                                <span>{{$item->price}} Tk</span>
+    
+                                                
                                             </div>
                                         </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">{{$item->name}}</a></h4>
-                                            <span>{{$item->price}} Tk </span>
-                                        </div>
                                     </div>
-                                </div>
+
+                                @include('inc.modal')
                                 
                                 @endforeach
 

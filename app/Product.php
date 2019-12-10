@@ -10,7 +10,9 @@ class Product extends Model
 {
 	//
 
-	protected $fillable = ['id','user_id','name','details','description','price'];
+	// protected $fillable = ['id','user_id','name','details','description','price'];
+
+	protected $guarded = [];
 
     //
      

@@ -13,11 +13,19 @@ Route::resource('/order','OrderC');
 
 Route::resource('/product','ProductC');
 
-Route::get('/like','OrderC@like')->name('like');
+Route::get('like/{id}/delete','OrderC@likeDelete');
 
-Route::post('/like','OrderC@storelike')->name('storelike');
+Route::get('like','OrderC@like')->name('like');
 
-Route::get('/search/{qury}','ProductC@search')->name('search');
+Route::get('like/{id}/store','OrderC@storelike')->name('storelike');
+
+Route::get('search/{qury}','ProductC@search')->name('search');
+
+Route::get('searchc/{qury}','ProductC@searchCategorie');
+
+Route::get('order/{id}/create','OrderC@create');
+
+Route::get('order/{id}/delete','OrderC@destroy');
 
 Route::get('/show', function () {
     return view('product.show');
@@ -49,11 +57,11 @@ Route::get('/about', function () {
 
 Route::get('/ss', function () {
 
-    //$user = Auth::user();
 
-   // $items = Produck::all();
+    $products = Product::all();
 
-    // return view('product.Search');
+    return view('product.search',compact('products'));
+
 
 });
 

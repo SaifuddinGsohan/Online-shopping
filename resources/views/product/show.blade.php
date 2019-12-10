@@ -14,11 +14,13 @@
         <div class="product-details pt-100 pb-80">
             <div class="container">
                 <div class="row">
+                    
+
                     <div class="col-md-12 col-lg-7 col-12">
                         <div class="product-details-4 pr-70">
                             <div class="easyzoom easyzoom--overlay">
                                 <a href="assets/img/product-details/bl2.jpg">
-                                    <img src="assets/img/product-details/l1-details-4.jpg" alt="">
+                                    <img src="{{ asset('storage') }}/{{ $product ['product']->photo }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -26,6 +28,7 @@
                     <div class="col-md-12 col-lg-5 col-12">
                         <div class="product-details-content">
                             <h3>{{$product ['product']->name}}</h3>
+                            @php( $item = $product ['product'])
 
                             <div class="rating-number">
 
@@ -46,7 +49,7 @@
                                 <span>{{$product ['product']->price}} Tk</span>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmol tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+                            <p>{{$product ['product']->details}}</p>
 
 
                             <!-- <div class="product-color-2">
@@ -83,7 +86,7 @@
                                 </div> -->
 
                                 <div class="quickview-btn-cart">
-                                    <a class="btn-hover-black" href="#">add to cart</a>
+                                    <a class="btn-hover-black" href="order/{{$item->id}}/create">Add to Order</a>
                                 </div>
 
                                 <div class="quickview-btn-wishlist">
@@ -107,18 +110,16 @@
                             <div class="product-details-cati-tag mtb-10">
                                 <ul>
                                     <li class="categories-title">Tags :</li>
-                                    <li><a href="#">fashion</a></li>
-                                    <li><a href="#">electronics</a></li>
-                                    <li><a href="#">toys</a></li>
-                                    <li><a href="#">food</a></li>
-                                    <li><a href="#">jewellery</a></li>
+                                    <li><a href="{{ url('/') }}">{{$product ['product']->tag}}</a></li>
+                                    <li><a href="{{ url('/') }}">{{$product ['product']->tag1}}</a></li>
                                 </ul>
                             </div>
 
 
                             <div class="bundle-area">
                                 <h3>Buy and get off to 35%</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmol tempor incidid ut labore et dolore magna aliqua.</p>
+
+                                <p>{{$product ['product']->description}}.</p>
                                 <!-- <div class="bundle-all-price">
                                     
                                     <div class="bundle-result">
@@ -158,6 +159,7 @@
                         </div>
                     </div>
                 </div>
+                 
             </div>
         </div>
 
@@ -187,48 +189,9 @@
         </div>
 
 
-        <!-- product area start -->
-        <div class="product-area pb-95">
-            <div class="container">
-                <div class="section-title-3 text-center mb-50">
-                    <h2>Related products</h2>
-                </div>
-                <div class="product-style">
-                    <div class="related-product-active owl-carousel">
-
-                        @foreach($product ['items'] as $item)
-
-                        <div class="product-wrapper">
-                            <div class="product-img">
-                                <a href="#">
-                                    <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
-                                </a>
-                                <span>hot</span>
-                                <div class="product-action">
-                                    <a class="animate-left" title="Wishlist" href="#">
-                                        <i class="pe-7s-like"></i>
-                                    </a>
-                                    <a class="animate-top" title="Add To Cart" href="#">
-                                        <i class="pe-7s-cart"></i>
-                                    </a>
-                                    <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                        <i class="pe-7s-look"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h4><a href="#">{{$item->name}}</a></h4>
-                                <span>{{$item->price}} Tk</span>
-                            </div>
-                        </div>
-
-                       @endforeach 
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- product area end -->
+       
+        @include('inc.newproduct')
+        
 
 
         @include('inc.footer')
@@ -236,10 +199,7 @@
 
         @include('inc.sidemodal')
 
-        
-        @include('inc.modal')
-        
-        
+    
         @include('inc.js')
 
     </body>
