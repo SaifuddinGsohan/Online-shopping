@@ -17,8 +17,9 @@
                                         <ul class="single-dropdown">
                                             <li><a href="{{ url('/about') }}">about us</a></li>
                                             <li><a href="{{ url('/login') }}">login</a></li>
-                                            <li><a href="{{ route('register') }}">egister</a></li>
+                                            <li><a href="{{ route('register') }}">Register</a></li>
                                             <li><a href="{{ url('/order') }}">Order</a></li>
+                                            <li><a href="{{ url('/product') }}">Product</a></li>
                                             <li><a href="{{ url('/like') }}">Like</a></li>
                                             <li><a href="{{ url('/contact') }}">contact</a></li>
                                         </ul>

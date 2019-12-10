@@ -123,7 +123,14 @@
                                                 <a href="#">
                                                     <img src="{{ asset('storage') }}/{{ $item->photo }}" alt="">
                                                 </a>
-                                                <span>hot</span>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"  >
+                                                    <a class="animate-left" title="Delete" href="product/{{$item->id}}/delete">
+                                                        <input type="hidden" name="_method" value="POST">
+                                                        x
+                                                    </a>
+                                                    <!-- <span>x</span> -->
+                                                </button>
+                                                <!-- <span>hot</span> -->
                                                 <div class="product-action">
                                                     {{csrf_field()}}
                                                         <input type="hidden" name="_method" value="POST">

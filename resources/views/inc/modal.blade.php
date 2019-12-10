@@ -43,7 +43,7 @@
                             <h3>{{$item->name}}</h3>
                             <div class="price">
                                 <span class="new">{{$item->price}} TK</span>
-                                <span class="old">{{$item->price + 50}} Tk</span>
+                                <span class="old">{{$item->price * 1.3}} Tk</span>
                             </div>
                             <!-- <div class="rating-number">
                                 <div class="quick-view-rating">

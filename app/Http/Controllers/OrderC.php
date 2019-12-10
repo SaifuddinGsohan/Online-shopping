@@ -19,18 +19,12 @@ class OrderC extends Controller
      */
     public function index()
     {
-        //
 
-       // $uid= Auth::user()->id;
 
         $lists=[];
 
         $orders = Order::where('user_id', Auth::id())->get();
         $products = Product::all();
-
-        //return $list[]= $producks->;
-        //return $orders;
-        //return $producks->user_id;
 
         foreach($orders as $order){
             
@@ -39,15 +33,10 @@ class OrderC extends Controller
                 if($product->id == $order->product_id){
 
                    $lists[]= $product;
-                   // $lists['tp'] =+ $product->price; 
                 }
             }
         }
         
-
-        //return $list;
-        //return $orders;
-        //return $producks->user_id;
 
 
 
@@ -69,19 +58,10 @@ class OrderC extends Controller
         $products = new Order();
         $products->product_id = $id;
         $products->user_id = $user->id;
-
-        // return $products;
         $products->save();
         
-  
-        //$pid = $request->produck_id;
-        //$producks = Produck::findOrFail($pid);
 
         return redirect('/');
-
-        //$user = Auth::user();
-
-        //return view('produck.create',compact('user'));
 
     }
 
@@ -191,11 +171,8 @@ class OrderC extends Controller
         $products = Product::all();
 
         foreach($Likes as $Like){
-            
             foreach($products as $product){
-
                 if($product->id == $Like->product_id){
-
                    $lists[]= $product;
                 }
             }
@@ -208,19 +185,14 @@ class OrderC extends Controller
     public function storelike($id)
     {
         
-         $user = Auth::user();
+        $user = Auth::user();
 
         $products = new like();
         $products->product_id = $id;
         $products->user_id = $user->id;
-
-       
         $products->save();
 
         
-  
-        //$pid = $request->produck_id;
-        //$producks = Produck::findOrFail($pid);
 
         return redirect('/');
 

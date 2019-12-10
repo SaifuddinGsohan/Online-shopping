@@ -82,14 +82,14 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
 
                             <div class="col-md-6">
-                                 <select class="form-control" name="user_role_id">
+                                 <select class="form-control" name="role_id">
 
-                                  <option disabled selected>Select a role</option>
-                                        @php( $userrole = \App\Role::all())
-                                        @foreach($userrole as $user_role)
-                                            <option value="{{ $user_role->id }}">{{ $user_role->name }}</option>
-                                        @endforeach         
-                                </select>                                       
+                                    <option disabled selected>Select a role</option>
+                                    @php( $userrole = \App\Role::all())
+                                    @foreach($userrole as $user_role)
+                                        <option value="{{ $user_role->id }}">{{ $user_role->name }}</option>
+                                    @endforeach         
+                                </select>                                      
                             </div>
                         </div>
 

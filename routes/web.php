@@ -15,6 +15,8 @@ Route::resource('/product','ProductC');
 
 Route::get('like/{id}/delete','OrderC@likeDelete');
 
+Route::get('product/{id}/delete','ProductC@destroy');
+
 Route::get('like','OrderC@like')->name('like');
 
 Route::get('like/{id}/store','OrderC@storelike')->name('storelike');

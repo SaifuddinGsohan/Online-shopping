@@ -10,6 +10,7 @@
                             <div class="footer-widget-content">
                                 <ul>
                                     <li><a href="/order">Order</a></li>
+                                    <li><a href="{{ url('/product') }}">Product</a></li>
                                     <li><a href="{{url('/login')}}">Login</a></li>
                                     <li><a href="{{url('/register')}}">Register</a></li>
                                     <li><a href="{{ url('/about') }}">about us</a></li>
@@ -72,7 +73,7 @@
                     <div class="col-12 text-center">
                         <div class="copyright">
                             <p>
-                                Saifuddin sohan ©
+                                Thundercat ©
                                 <a href="http://daffodilvarsity.edu.bd/">D I U</a> 2020. Department of CSE.
                             </p>
                         </div>

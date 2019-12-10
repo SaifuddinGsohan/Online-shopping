@@ -1,12 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
     
     @include('inc.headcss')
 
     <body>
-        <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+
         
         @include('inc.header')
 
@@ -24,7 +22,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="sidebar-widget mb-40">
+                            <!-- <div class="sidebar-widget mb-40">
                                 <h3 class="sidebar-title">Filter by Price</h3>
                                 <div class="price_filter">
                                     <div id="slider-range"></div>
@@ -36,18 +34,18 @@
                                         <button type="button">Filter</button> 
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="sidebar-widget mb-45">
                                 <h3 class="sidebar-title">Categories</h3>
                                 <div class="sidebar-categories">
                                     <!-- // -->
                                     <ul>
-                                        <li><a href="shop.html">Device</a></li>
-                                        <li><a href="shop.html">Women</a></li>
-                                        <li><a href="shop.html">Man</a></li>
-                                        <li><a href="shop.html">kids</a></li>
-                                        <li><a href="shop.html">Sport</a></li>
+                                        <li><a href="{{ url('search/device') }}">Device</a></li>
+                                        <li><a href="{{ url('search/women') }}">Women</a></li>
+                                        <li><a href="{{ url('search/man') }}">Man</a></li>
+                                        <li><a href="{{ url('search/kid') }}">kids</a></li>
+                                        <li><a href="{{ url('search/sport') }}">Sport</a></li>
 
                                         <!-- <li><a href="#">Accessories <span>4</span></a></li>
                                         <li><a href="#">Book <span>9</span></a></li>

@@ -23,7 +23,7 @@
                                     <li><a href="{{ url('/login') }}">login</a></li>
                                     <li><a href="{{ route('register') }}">register</a></li>
                                     <li><a href="{{ url('/order') }}">Order page</a></li>
-                                    <li><a href="">checkout</a></li>
+                                    <li><a href="{{ url('/product') }}">Product</a></li>
                                     <li><a href="{{ url('/like') }}">Like</a></li>
                                     <li><a href="{{ url('/contact') }}">contact</a></li>
                                 </ul>
@@ -84,7 +84,7 @@
                             <li><a href="#">Electronic Devices<span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
                                     <div class="mega-dropdown-style mega-common2 mega-common4">
-                                        <h4 class="searchc/1">Devices</h4>
+                                        <h4 class="mega-subtitle">Devices</h4>
                                         <ul>
                                             <li><a href="{{ url('search/Mobile') }}">Mobile</a></li>
                                             <li><a href="{{ url('search/computer') }}">Computer</a></li>
@@ -528,7 +528,7 @@
 
                             </div>
                         </div>
-
+                        
 
                         <div class="tab-pane fade" id="home2" role="tabpanel">
                             <div class="custom-row">

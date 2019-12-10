@@ -11,6 +11,7 @@ use Storage;
 
 class ProductC extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -76,13 +77,9 @@ class ProductC extends Controller
      */
     public function store(Request $request)
     {
-
         $image = '';
-
         if($request->has('photo')){
-             $image = $request->file('photo')->store('photos');
-         }
-
+            $image = $request->file('photo')->store('photos');}
         $products = new Product();
         $products->name = $request->name;
         $products->details = $request->details;
@@ -95,10 +92,8 @@ class ProductC extends Controller
         $products->tag2 = $request->tag2;
         $products->categorie_id = $request->categorie_id;
         $products->save();
-
+        
         return redirect('/product');
-
-
     }
 
     /**
@@ -113,9 +108,7 @@ class ProductC extends Controller
         $user = Auth::user();
         
         $product ['product'] = Product::findOrFail($id);
-
         $pu_id = $product ['product']->user_id;
-
         $product ['items'] = Product::where('user_id',$pu_id)->get();
 
 

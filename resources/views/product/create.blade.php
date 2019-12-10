@@ -60,21 +60,24 @@
 
                                         <div class="col-md-6">
                                             <div class="checkout-form-list">
-                                                <label>Categorie<span class="required">*</span></label> 
+                                                <label>Categorie</label> 
 
-                                                <select>
-                                                    <option name="categorie_id" value="1">Device</option>  
-                                                    <option name="categorie_id" value="2">Women</option>
-                                                    <option name="categorie_id" value="3">Men</option>
-                                                    <option name="categorie_id" value="5">Sport</option>
-                                                    <option name="categorie_id" value="4">Kids</option>            
+                                                <select class="form-control" name="categorie_id">
+                                                    <option disabled selected>Select Categorie</option>
+                                                    <option value="1">Device</option>  
+                                                    <option value="2">Women</option>
+                                                    <option value="3">Men</option>
+                                                    <option value="5">Sport</option>
+                                                    <option value="4">Kids</option>            
                                                 </select>                                       
                                             </div>
                                         </div>
 
-                                        <div class="order-notes">
-                                            <label for="exampleFormControlFile1">Example file input</label>
-                                            <input type="file" class="form-control-file" name="photo" id="exampleFormControlFile1">
+                                        <div class="col-md-6">
+                                            <div class="checkout-form-list">
+                                                <label for="exampleFormControlFile1">Product Photo<span class="required">*</span></label>
+                                                <input type="file" class="form-control-file" name="photo" id="exampleFormControlFile1">
+                                            </div>
                                         </div>
 
                                         
@@ -95,7 +98,7 @@
 
                                         <div class="col-md-6">
                                             <div class="checkout-form-list">
-                                                <label>Tag <span class="required">*</span></label>
+                                                <label>Tag</label>
                                                 <input type="text" name="tag" placeholder="" />
                                                 <input type="text" name="tag1" placeholder="" />
                                                 <input type="hidden" name="tag2" value="all">

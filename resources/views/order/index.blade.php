@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="cart-heading">Cart</h1>
+                        <h1 class="cart-heading">Order</h1>
                         <form action="#">
                             <div class="table-content table-responsive">
                                 <table>
@@ -94,7 +94,7 @@
                                         <!-- <h2>Cart totals</h2>
                                         <ul>
                                             <li>Subtotal<span>100.00</span></li>
-                                            <li>Total Tk<span>{{ $list ['Tp'] }}.0 Tk</span></li>
+                                            <li>Total Tk<span>100.0 Tk</span></li>
                                         </ul> -->
                                         <a href="/">Proceed to checkout</a>
                                     </div>
