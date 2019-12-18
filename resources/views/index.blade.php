@@ -29,9 +29,9 @@
                                 </ul>
                             </li>
 
-                            <!-- <li><a href="#">Latest <span>New</span></a>
+                            <li><a href="#">Latest <span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width">
-                                    <div class="mega-dropdown-style mega-common4 mb-40">
+                                    <!-- <div class="mega-dropdown-style mega-common4 mb-40">
                                         <h4 class="mega-subtitle"> Clothing</h4>
                                         <ul>
                                             <li><a href="#"> New Products</a></li>
@@ -74,12 +74,12 @@
                                             <h5>Make A Discount</h5>
                                             <h2>UP TO 30%</h2>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="mega-banner-img-2">
                                         <a href="single-product.html"><img src="assets/img/bg/3.png" alt=""></a>
                                     </div>
                                 </div>
-                            </li> -->
+                            </li>
 
                             <li><a href="#">Electronic Devices<span>New</span></a>
                                 <div class="mega-menu-dropdown mega-dropdown-width-2">
@@ -227,6 +227,47 @@
                             </button>
                         </form>
                     </div>
+
+                    <!-- order -->
+
+                        <div class="header-cart">
+                            <a class="icon-cart-furniture" href="/order">
+                                <i class="ti-shopping-cart"></i>
+                                <span class="shop-count-furniture green">02</span>
+                            </a>
+                            <ul class="cart-dropdown">
+
+                                
+                                <li class="single-product-cart">
+                                    <div class="cart-img">
+                                        <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="cart-title">
+                                        <h5><a href="#"> Bits Headphone</a></h5>
+                                        <h6><a href="#">Black</a></h6>
+                                        <span>$80.00 x 1</span>
+                                    </div>
+                                    <div class="cart-delete">
+                                        <a href="#"><i class="ti-trash"></i></a>
+                                    </div>
+                                </li>
+                                
+
+                                <li class="cart-space">
+                                    <div class="cart-sub">
+                                        <h4>Total</h4>
+                                    </div>
+                                    <div class="cart-price">
+                                        <h4>$240.00</h4>
+                                    </div>
+                                </li>
+
+                                <li class="cart-btn-wrapper">
+                                    <a class="cart-btn btn-hover" href="/order">view cart</a>
+                                     <a class="cart-btn btn-hover" href="#">checkout</a> 
+                                </li>
+                            </ul>
+                        </div>
 
                     <!-- // -->
 
